@@ -84,6 +84,7 @@ input{
     border-radius: 8px;
     border: 0px;
     opacity: 0.8;
+    line-height: 21px;
 }
 
 .btn:hover {
