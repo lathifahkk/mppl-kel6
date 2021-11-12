@@ -7,68 +7,32 @@ body {
     padding: 0px;
 }
 
-li {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
 }
 
-.container {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
 .header {
     height: 112px;
+    margin-bottom: 10px;
 }
 
 .header-logo {
     float: left;
     font-size: 24px;
-    padding: 20px 40px;
+    padding: 35px 40px;
 }
 
 .header-logo span {
     color: #29a867;
 }
 
-.header-list li {
-    float: right;
-    padding: 33px 20px;
-    font-size: 16px;
-}
-
-.main {
-    height: 550px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.login {
-    width: 50%;
-    float: left;
-}
-
-.login img {
-    float: left;
-}
-
-.login h1 {
-    font-size: 28px;
-    font-weight: lighter;
-    text-align: left;
-}
-
-.login p {
-    font-size: 16px;
-    margin-bottom: 6px;
+.header-list {
+    margin-top: 33px;
+    text-align: right;
 }
 
 input {
     width: 246px;
-    height: 21px;
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
@@ -77,40 +41,27 @@ input {
     margin-bottom: 16px;
 }
 
+.login p {
+    margin-bottom: 6px;
+}
+
 .btn {
-    display: block;
-    text-align: center;
-    width: 246px;
-    height: 21px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
     border: 0px;
     opacity: 0.8;
-    line-height: 21px;
 }
 
 .btn:hover {
     opacity: 1;
 }
 
-.sign-in {
-    background-color: #29a867;
-    color: #fff;
-    margin-top: 10px;
-    margin-bottom: 16px;
-}
-
-.sign-up {
-    background-color: #f3f3f3;
-    color: #bbb;
+.batas {
+    margin: 0;
+    padding: 0;
 }
 
 .footer {
+    border-top: 1px solid #e4e4e4;
     height: 88px;
-}
-
-.footer p {
     color: #979797;
     font-size: 14px;
     padding-top: 30px;
