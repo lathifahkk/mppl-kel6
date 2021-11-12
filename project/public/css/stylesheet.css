@@ -1,7 +1,7 @@
 body {
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
-     
+
 li {
     list-style: none;
 }
@@ -9,50 +9,48 @@ li {
 a {
     text-decoration: none;
 }
-   
+
 .container {
-    margin-left:100px;
-    margin-right:100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-     
+
 .header {
     height: 112px;
 }
-  
+
 .header-logo {
     float: left;
     font-size: 24px;
     padding: 20px 40px;
 }
-   
-.header-logo span{
-    color:#29A867;
+
+.header-logo span {
+    color: #29a867;
 }
-     
+
 .header-list li {
     float: right;
     padding: 33px 20px;
     font-size: 16px;
 }
-     
-     
+
 .main {
     height: 550px;
-    padding-left:100px;
+    padding-left: 100px;
     padding-right: 100px;
 }
-   
-   
-.login{
+
+.login {
     width: 50%;
-    float:left;
+    float: left;
 }
 
 .login img {
-    float:left;
+    float: left;
 }
 
-.login h1{
+.login h1 {
     font-size: 28px;
     font-weight: lighter;
     text-align: left;
@@ -63,7 +61,7 @@ a {
     margin-bottom: 6px;
 }
 
-input{
+input {
     width: 246px;
     height: 21px;
     padding: 10px;
@@ -71,7 +69,7 @@ input{
     border-radius: 8px;
     background-color: #f3f3f3;
     border: 0px;
-    margin-bottom:16px;
+    margin-bottom: 16px;
 }
 
 .btn {
@@ -92,7 +90,7 @@ input{
 }
 
 .sign-in {
-    background-color: #29A867;
+    background-color: #29a867;
     color: #fff;
     margin-top: 10px;
     margin-bottom: 16px;
@@ -105,13 +103,11 @@ input{
 
 .footer {
     height: 88px;
-    border-top: 1px solid #E4E4E4;
 }
-   
+
 .footer p {
-    color:#979797;
+    color: #979797;
     font-size: 14px;
-    text-align: center;
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

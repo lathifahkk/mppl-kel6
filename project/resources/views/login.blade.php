@@ -36,7 +36,7 @@
                     <input>
                     <p>Password</p>
                     <input>
-                    <a href="#" class="btn sign-in">Sign in to My Account</a>
+                    <a href="/sign-up-success" class="btn sign-in">Sign in to My Account</a>
                     <a href="#" class="btn sign-up">Sign Up</a>
                 </div>
             </div>
