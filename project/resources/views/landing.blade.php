@@ -33,26 +33,26 @@
         </div>
     
         <div class="container">
-            <div class="row pt-3 text-center">
-                <div class="col">
-                    <img src="img/bag.png" alt="bag" style="width: 150px; height:150px">
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col mt-3">
-                    <p class="fs-3">Welcome to Nasi Pecel Mbak Merr</p>
-                </div>
-            </div>
             <div class="row text-center">
                 <div class="col">
-                    <p class="fw-lighter mb-1" style="color:#525252; font-size:16px;">Kamu sudah berhasil terdaftar bersama kami.</p>
-                    <p class="fw-lighter mb-1" style="color:#525252; font-size:16px;">Yuk lihat-lihat produk yang ada.</p>
+                    <img src="img/jumbotron.png" alt="bag" style="width:100%; height:360px">
+                    <p class="jumbotron-msg fw-bold">Discount 50% Off Untuk Sambal</p>
+                    <p class="jumbotron-msg-2 fw-lighter">Harga belum termasuk ongkir dari tiap kota.</p>
                 </div>
             </div>
+        </div>
 
-            <div class="row text-center mt-5">
+        <div class="product">
+            <div class="row">
                 <div class="col">
-                    <button type="button" class="btn btn-success" style="width:150px; height:44px;">Go to home</button>
+                    <p>
+                        Product
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    
                 </div>
             </div>
         </div>
