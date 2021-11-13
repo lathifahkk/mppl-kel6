@@ -115,3 +115,15 @@ input{
     padding-top:30px;
     padding-bottom:30px;
 }
+
+.navbar{
+    width: 250px;
+    height: 826px;
+    position: fixed;
+    background-color: #FEFEFE;
+}
+
+.logoadmin{
+    margin-left: 85px;
+    margin-top: 34px;
+}
