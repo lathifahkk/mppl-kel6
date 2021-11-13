@@ -7,7 +7,6 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/stylesheet.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        
         <title>Pecel Mba Merr</title>
 
         <!-- Fonts -->
@@ -18,13 +17,15 @@
         <div class="container">
             <div class="header">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-6">
                         <div class="header-logo">Lo<span>go</span></div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-6">
                         <div class="header-list">
-                            <a href="#" class="btn" style="color:#0C0D36;">Home</a>    
+                            <a href="#" class="btn" style="color:#FF7158;">Home</a>    
                             <a href="#" class="btn" style="color:#0C0D36;">Product</a>    
+                            <a href="#" class="btn" style="color:#0C0D36;">Sign Up</a>    
+                            <a href="#" class="btn btn-success" style="width:120px">Sign In</a>    
                         </div>
                     </div>
                 </div>
@@ -32,32 +33,31 @@
         </div>
     
         <div class="container">
-            <div class="row pt-5">
-                <div class="col-6">
-                    <img src="img/pic-1.png" alt="login pic" style="padding-left: 150px;">
+            <div class="row pt-3 text-center">
+                <div class="col">
+                    <img src="img/bag.png" alt="bag" style="width: 150px; height:150px">
                 </div>
-                <div class="col-6 login">
-                    <h1>Belanja Sambal Pecal Nganjuk,</h1>
-                    <h1>menjadi lebih mudah</h1>
-                    <p>Email Address</p>
-                    <input style="font-size: 16px;">
-                    <p>Password</p>
-                    <input style="font-size: 16px;">
-                    <p class="batas"></p>
-                    <a href="/sign-up-success" class="btn" style="background-color: #29a867;
-                    color: #fff;
-                    margin-top: 10px;
-                    margin-bottom: 16px;
-                    width:246px;">Sign in to My Account</a>
-                    <p class="batas"></p>
-                    <a href="#" class="btn" style="background-color: #f3f3f3;
-                    color: #bbb;
-                    width:246px;">Sign Up</a>
+            </div>
+            <div class="row text-center">
+                <div class="col mt-3">
+                    <p class="fs-3">Welcome to Nasi Pecel Mbak Merr</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <p class="fw-lighter mb-1" style="color:#525252; font-size:16px;">Kamu sudah berhasil terdaftar bersama kami.</p>
+                    <p class="fw-lighter mb-1" style="color:#525252; font-size:16px;">Yuk lihat-lihat produk yang ada.</p>
+                </div>
+            </div>
+
+            <div class="row text-center mt-5">
+                <div class="col">
+                    <button type="button" class="btn btn-success" style="width:150px; height:44px;">Go to home</button>
                 </div>
             </div>
         </div>
     
-        <div class="row text-center footer" style="margin-top:100px;">
+        <div class="row text-center footer" style="margin-top:170px;">
             <div class="col">
                 <p>2021 Copyright Store. All Rights Reserved.</p>
             </div>
