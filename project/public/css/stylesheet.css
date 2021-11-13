@@ -19,7 +19,7 @@ a {
 .header-logo {
     float: left;
     font-size: 24px;
-    padding: 35px 40px;
+    padding: 35px 0px;
 }
 
 .header-logo span {
@@ -29,6 +29,29 @@ a {
 .header-list {
     margin-top: 33px;
     text-align: right;
+}
+
+.jumbotron-msg {
+    margin-left: 40px;
+    text-align: start;
+    font-size: 36px;
+    font-family: "Montserrat";
+    position: absolute;
+    top: 220px;
+    width: 20%;
+    color: white;
+    line-height: 38px;
+}
+
+.jumbotron-msg-2 {
+    margin-left: 40px;
+    text-align: start;
+    font-size: 18px;
+    font-family: "Montserrat";
+    position: absolute;
+    top: 305px;
+    width: 15%;
+    color: white;
 }
 
 input {
@@ -65,20 +88,22 @@ input {
     color: #979797;
     font-size: 14px;
     text-align: center;
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.navbar{
+.navbar {
     width: 250px;
     height: 826px;
     position: fixed;
-    background-color: #FEFEFE;
+    background-color: #fefefe;
 }
 
-.logoadmin{
+.logoadmin {
     margin-left: 85px;
     margin-top: 34px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .nav-link{

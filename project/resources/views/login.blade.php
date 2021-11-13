@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-4">
                         <div class="header-list">
-                            <a href="#" class="btn" style="color:#0C0D36;">Home</a>    
+                            <a href="/" class="btn" style="color:#0C0D36;">Home</a>    
                             <a href="#" class="btn" style="color:#0C0D36;">Product</a>    
                         </div>
                     </div>
@@ -37,17 +37,17 @@
                     <img src="img/pic-1.png" alt="login pic" style="padding-left: 150px;">
                 </div>
                 <div class="col-6 login">
-                    <h1>Belanja Sambal Pecal Nganjuk,</h1>
-                    <h1>menjadi lebih mudah</h1>
+                    <h1 style="font-size: 32px;">Belanja Sambal Pecal Nganjuk,</h1>
+                    <h1 style="font-size: 32px; margin-bottom:20px;">menjadi lebih mudah</h1>
                     <p>Email Address</p>
                     <input style="font-size: 16px;">
                     <p>Password</p>
-                    <input style="font-size: 16px;">
+                    <input style="font-size: 16px; margin-bottom:10px;">
                     <p class="batas"></p>
                     <a href="/sign-up-success" class="btn" style="background-color: #29a867;
                     color: #fff;
                     margin-top: 10px;
-                    margin-bottom: 16px;
+                    margin-bottom: 6px;
                     width:246px;">Sign in to My Account</a>
                     <p class="batas"></p>
                     <a href="#" class="btn" style="background-color: #f3f3f3;
