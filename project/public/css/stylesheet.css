@@ -64,6 +64,25 @@ input {
     height: 88px;
     color: #979797;
     font-size: 14px;
+<<<<<<< HEAD
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.navbar{
+    width: 250px;
+    height: 826px;
+    position: fixed;
+    background-color: #FEFEFE;
+}
+
+.logoadmin{
+    margin-left: 85px;
+    margin-top: 34px;
+}
+=======
     padding-top: 30px;
     padding-bottom: 30px;
 }
+>>>>>>> b0d714e5fb1319c231ad2912c45eec27dac2a098
