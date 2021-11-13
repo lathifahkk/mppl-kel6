@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-4">
                         <div class="header-list">
-                            <a href="#" class="btn" style="color:#0C0D36;">Home</a>    
+                            <a href="/" class="btn" style="color:#0C0D36;">Home</a>    
                             <a href="#" class="btn" style="color:#0C0D36;">Product</a>    
                         </div>
                     </div>
