@@ -64,7 +64,6 @@ input {
     height: 88px;
     color: #979797;
     font-size: 14px;
-<<<<<<< HEAD
     text-align: center;
     padding-top:30px;
     padding-bottom:30px;
@@ -81,8 +80,39 @@ input {
     margin-left: 85px;
     margin-top: 34px;
 }
-=======
-    padding-top: 30px;
-    padding-bottom: 30px;
+
+.nav-link{
+    font-size: 16px;
+    color: #0C0D36;
 }
->>>>>>> b0d714e5fb1319c231ad2912c45eec27dac2a098
+
+.nav-select{
+    background-image: linear-gradient(to right, #FFFFFF, #FF7158);
+}
+
+.nav-notselect{
+    font-size: 16px;
+    color: #C5C5C5;
+    margin-top: 24px;
+}
+
+.dashboard{
+    margin-left: 290px;
+    display: flex;
+}
+
+.card-dashboard{
+    width: 240px;
+    height: 130px;
+    background-color: #FEFEFE;
+    box-shadow: 0px 4px 15px #f1f1f8;
+    border-radius: 8px;
+}
+
+.card-recent{
+    width: 800px;
+    height: 70px;
+    background-color: #FEFEFE;
+    box-shadow: 0px 4px 15px #f1f1f8;
+    border-radius: 8px;
+}
