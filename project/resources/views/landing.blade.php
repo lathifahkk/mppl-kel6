@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <div class="container product">
+        <div class="container">
             <div class="row mt-4 fw-bolder">
                 <div class="col">
                     <p>
@@ -52,12 +52,121 @@
             </div>
             <div class="row">
                 <div class="col">
-                    
+                    <a href="/offline"><img class="me-2" src="img/offline.png" alt="offline"></a>
+                    <a href="/online">
+                        <img src="img/online.png" alt="online">
+                    </a>
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <div class="row mt-4 mb-0 fw-bolder">
+                <div class="col">
+                    <p>
+                        New Product
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 me-3 text-start">
+                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
+                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <div class="card-body">
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 me-3 text-start">
+                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
+                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <div class="card-body">
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 me-3 text-start">
+                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
+                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <div class="card-body">
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 me-3 text-start">
+                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
+                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <div class="card-body">
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 me-3 text-start">
+                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
+                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <div class="card-body">
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row mt-4">
+                <div class="col-2 me-3 text-start">
+                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
+                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <div class="card-body">
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 me-3 text-start">
+                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
+                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <div class="card-body">
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 me-3 text-start">
+                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
+                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <div class="card-body">
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 me-3 text-start">
+                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
+                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <div class="card-body">
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 me-3 text-start">
+                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
+                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <div class="card-body">
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     
-        <div class="row text-center footer" style="margin-top:170px;">
+        <div class="row text-center footer mt-4">
             <div class="col">
                 <p>2021 Copyright Store. All Rights Reserved.</p>
             </div>
