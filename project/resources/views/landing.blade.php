@@ -42,8 +42,8 @@
             </div>
         </div>
 
-        <div class="product">
-            <div class="row">
+        <div class="container product">
+            <div class="row mt-4 fw-bolder">
                 <div class="col">
                     <p>
                         Product
