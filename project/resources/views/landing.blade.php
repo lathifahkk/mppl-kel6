@@ -22,10 +22,10 @@
                     </div>
                     <div class="col-6">
                         <div class="header-list">
-                            <a href="#" class="btn" style="color:#FF7158;">Home</a>    
-                            <a href="#" class="btn" style="color:#0C0D36;">Product</a>    
-                            <a href="#" class="btn" style="color:#0C0D36;">Sign Up</a>    
-                            <a href="#" class="btn btn-success" style="width:120px">Sign In</a>    
+                            <a href="#" class="btn nav-btn" style="color:#FF7158;">Home</a>    
+                            <a href="#" class="btn nav-btn" style="color:#0C0D36;">Product</a>    
+                            <a href="#" class="btn nav-btn" style="color:#0C0D36;">Sign Up</a>    
+                            <a href="#" class="btn btn-success nav-btn" style="width:120px">Sign In</a>    
                         </div>
                     </div>
                 </div>
