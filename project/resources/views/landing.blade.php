@@ -70,6 +70,7 @@
             </div>
             <div class="row">
                 <div class="col-2 me-3 text-start">
+                    <a href="/nasi-pecel-nganjuk">
                     <div class="card" style="width: 216px; border-radius:8px; float:left;">
                         <img src="img/product-1.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
@@ -77,92 +78,87 @@
                           <p class="card-text" style="color:#FF7158;">11.000</p>
                         </div>
                     </div>
+                    </a>
                 </div>
                 <div class="col-2 me-3 text-start">
+                    <a href="/nasi-sambal-tumpang">
                     <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <img src="img/product-2.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Sambal Tumpang</p>
                           <p class="card-text" style="color:#FF7158;">11.000</p>
                         </div>
                     </div>
+                    </a>
                 </div>
                 <div class="col-2 me-3 text-start">
+                    <a href="/pecal-tanpa-nasi">
                     <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <img src="img/product-3.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
-                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                          <p class="card-text mb-0" style="color:#0C0D36;">Pecal Tanpa Nasi</p>
+                          <p class="card-text" style="color:#FF7158;">9.000</p>
                         </div>
                     </div>
+                    </a>
                 </div>
                 <div class="col-2 me-3 text-start">
+                    <a href="/nasi-gudeg">
                     <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <img src="img/product-4.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
-                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Gudeg</p>
+                          <p class="card-text" style="color:#FF7158;">16.000</p>
                         </div>
                     </div>
+                    </a>
                 </div>
-                <div class="col-2 me-3 text-start">
-                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
-                        <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
-                          <p class="card-text" style="color:#FF7158;">11.000</p>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
-            <div class="row mt-4">
+            <div class="row">
                 <div class="col-2 me-3 text-start">
+                    <a href="/soto-betawi">
                     <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <img src="img/product-5.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
-                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                          <p class="card-text mb-0" style="color:#0C0D36;">Soto Betawi</p>
+                          <p class="card-text" style="color:#FF7158;">16.000</p>
                         </div>
                     </div>
+                    </a>
                 </div>
                 <div class="col-2 me-3 text-start">
+                    <a href="/soto-mie">
                     <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <img src="img/product-6.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
-                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                          <p class="card-text mb-0" style="color:#0C0D36;">Soto Mie</p>
+                          <p class="card-text" style="color:#FF7158;">16.000</p>
                         </div>
                     </div>
+                    </a>
                 </div>
                 <div class="col-2 me-3 text-start">
+                    <a href="/soto-ayam">
                     <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <img src="img/product-7.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
-                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                          <p class="card-text mb-0" style="color:#0C0D36;">Soto Ayam</p>
+                          <p class="card-text" style="color:#FF7158;">16.000</p>
                         </div>
                     </div>
+                    </a>
                 </div>
                 <div class="col-2 me-3 text-start">
+                    <a href="/sambal-pecal1kg">
                     <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                        <img src="img/product-8.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
-                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                          <p class="card-text mb-0" style="color:#0C0D36;">Sambal Pecal 1kg</p>
+                          <p class="card-text" style="color:#FF7158;">45.000</p>
                         </div>
                     </div>
+                    </a>
                 </div>
-                <div class="col-2 me-3 text-start">
-                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
-                        <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
-                          <p class="card-text" style="color:#FF7158;">11.000</p>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
     
