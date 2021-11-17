@@ -21,6 +21,10 @@ Route::get('/sign-up-success', function () {
     return view('sign-up-success');
 });
 
+Route::get('/transaction-success', function () {
+    return view('transaction-success');
+});
+
 Route::get('/login', function () {
     return view('login');
 });

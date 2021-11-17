@@ -114,7 +114,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-2 me-3 text-start">
                     <a href="/soto-betawi">
                     <div class="card" style="width: 216px; border-radius:8px; float:left;">
