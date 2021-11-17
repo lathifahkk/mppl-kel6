@@ -96,15 +96,15 @@ input {
 }
 
 .navbar {
-    width: 250px;
-    height: 826px;
+    height: 100%;
     position: fixed;
     background-color: #fefefe;
 }
 
 .logoadmin {
-    margin-left: 85px;
-    margin-top: 34px;
+    padding-left: 85px;
+    padding-top: 34px;
+    padding-right: 85px;
 }
 
 .nav-link {
@@ -128,8 +128,6 @@ input {
 }
 
 .card-dashboard {
-    width: 240px;
-    height: 130px;
     background-color: #fefefe;
     box-shadow: 0px 4px 15px #f1f1f8;
     border-radius: 8px;
@@ -141,4 +139,21 @@ input {
     background-color: #fefefe;
     box-shadow: 0px 4px 15px #f1f1f8;
     border-radius: 8px;
+}
+
+.button-addnew{
+    width: fit-content;
+    background-color: #29A867;
+    border-radius: 6px;
+}
+
+.card-product{
+    width: fit-content;
+    height: max-content;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px 0px #F1F1F8;
+    margin-top: 34px;
+    display: list-item;
+    list-style-type : none;
 }

@@ -28,3 +28,11 @@ Route::get('/login', function () {
 Route::get('/admin', function () {
     return view('admindashboard');
 });
+
+Route::get('/product', function () {
+    return view('adminproduct');
+});
+
+Route::get('/transaction', function () {
+    return view('admintransaction');
+});
