@@ -40,3 +40,7 @@ Route::get('/product', function () {
 Route::get('/transaction', function () {
     return view('admintransaction');
 });
+
+Route::get('/signup', function () {
+    return view('signup');
+});
