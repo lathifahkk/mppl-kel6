@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,3 +44,5 @@ Route::get('/transaction', function () {
 Route::get('/signup', function () {
     return view('signup');
 });
+
+Route::post('/register', [RegisterController::class, 'store']);
