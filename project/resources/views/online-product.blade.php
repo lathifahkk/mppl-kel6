@@ -43,28 +43,10 @@
         </div>
 
         <div class="container">
-            <div class="row mt-4" style="font-size: 24px">
-                <div class="col">
-                    <p>
-                        Product
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <a href="/offline-product"><img class="me-2" src="img/offline.png" alt="offline"></a>
-                    <a href="/online-product">
-                        <img src="img/online.png" alt="online">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
             <div class="row mt-4 mb-0" style="font-size: 24px">
                 <div class="col ">
                     <p>
-                        New Product
+                        Online Product
                     </p>
                 </div>
             </div>

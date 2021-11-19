@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('landing');
 });
 
+Route::get('/online-product', function () {
+    return view('online-product');
+});
+
+Route::get('/offline-product', function () {
+    return view('offline-product');
+});
+
 Route::get('/sign-up-success', function () {
     return view('sign-up-success');
 });
