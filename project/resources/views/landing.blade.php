@@ -22,10 +22,10 @@
                     </div>
                     <div class="col-6">
                         <div class="header-list">
-                            <a href="#" class="btn nav-btn" style="color:#FF7158;">Home</a>    
-                            <a href="#" class="btn nav-btn" style="color:#0C0D36;">Product</a>    
-                            <a href="#" class="btn nav-btn" style="color:#0C0D36;">Sign Up</a>    
-                            <a href="#" class="btn btn-success nav-btn" style="width:120px">Sign In</a>    
+                            <a href="#" class="btn nav-btn" style="color:#FF7158; font-size: 18px;">Home</a>    
+                            <a href="#" class="btn nav-btn" style="color:#0C0D36; font-size: 18px;">Product</a>    
+                            <a href="#" class="btn nav-btn" style="color:#0C0D36; font-size: 18px;">Sign Up</a>    
+                            <a href="#" class="btn btn-success nav-btn" style="width:120px font-size: 18px;">Sign In</a>    
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <img src="img/jumbotron.png" alt="bag" style="width:100%; height:360px">
+                    <img src="img/jumbotron.png" alt="bag" style="width:100%; height:500px">
                     <p class="jumbotron-msg fw-bold">Discount 50% Off Untuk Sambal</p>
                     <p class="jumbotron-msg-2 fw-lighter">Harga belum termasuk ongkir dari tiap kota.</p>
                 </div>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="container">
-            <div class="row mt-4 fw-bolder">
+            <div class="row mt-4" style="font-size: 24px">
                 <div class="col">
                     <p>
                         Product
@@ -61,18 +61,18 @@
         </div>
 
         <div class="container">
-            <div class="row mt-4 mb-0 fw-bolder">
-                <div class="col">
+            <div class="row mt-4 mb-0" style="font-size: 24px">
+                <div class="col ">
                     <p>
                         New Product
                     </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-2 me-3 text-start">
+                <div class="col text-start menu-card">
                     <a href="/nasi-pecel-nganjuk">
-                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-1.jpg" class="card-img-top" alt="product">
+                    <div class="card" style="width: 284px; border-radius:8px; float:left;">
+                        <img src="img/menu-1.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
                           <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
                           <p class="card-text" style="color:#FF7158;">11.000</p>
@@ -80,10 +80,10 @@
                     </div>
                     </a>
                 </div>
-                <div class="col-2 me-3 text-start">
+                <div class="col text-start menu-card">
                     <a href="/nasi-sambal-tumpang">
-                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-2.jpg" class="card-img-top" alt="product">
+                    <div class="card" style="width: 284px; border-radius:8px; float:left;">
+                        <img src="img/menu-2.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
                           <p class="card-text mb-0" style="color:#0C0D36;">Nasi Sambal Tumpang</p>
                           <p class="card-text" style="color:#FF7158;">11.000</p>
@@ -91,10 +91,10 @@
                     </div>
                     </a>
                 </div>
-                <div class="col-2 me-3 text-start">
+                <div class="col text-start menu-card">
                     <a href="/pecal-tanpa-nasi">
-                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-3.jpg" class="card-img-top" alt="product">
+                    <div class="card" style="width: 284px; border-radius:8px; float:left;">
+                        <img src="img/menu-3.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
                           <p class="card-text mb-0" style="color:#0C0D36;">Pecal Tanpa Nasi</p>
                           <p class="card-text" style="color:#FF7158;">9.000</p>
@@ -102,59 +102,13 @@
                     </div>
                     </a>
                 </div>
-                <div class="col-2 me-3 text-start">
+                <div class="col text-start menu-card">
                     <a href="/nasi-gudeg">
-                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-4.jpg" class="card-img-top" alt="product">
+                    <div class="card" style="width: 284px; border-radius:8px; float:left;">
+                        <img src="img/menu-4.jpg" class="card-img-top" alt="product">
                         <div class="card-body">
                           <p class="card-text mb-0" style="color:#0C0D36;">Nasi Gudeg</p>
                           <p class="card-text" style="color:#FF7158;">16.000</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-2 me-3 text-start">
-                    <a href="/soto-betawi">
-                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-5.jpg" class="card-img-top" alt="product">
-                        <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Soto Betawi</p>
-                          <p class="card-text" style="color:#FF7158;">16.000</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-2 me-3 text-start">
-                    <a href="/soto-mie">
-                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-6.jpg" class="card-img-top" alt="product">
-                        <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Soto Mie</p>
-                          <p class="card-text" style="color:#FF7158;">16.000</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-2 me-3 text-start">
-                    <a href="/soto-ayam">
-                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-7.jpg" class="card-img-top" alt="product">
-                        <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Soto Ayam</p>
-                          <p class="card-text" style="color:#FF7158;">16.000</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-2 me-3 text-start">
-                    <a href="/sambal-pecal1kg">
-                    <div class="card" style="width: 216px; border-radius:8px; float:left;">
-                        <img src="img/product-8.jpg" class="card-img-top" alt="product">
-                        <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Sambal Pecal 1kg</p>
-                          <p class="card-text" style="color:#FF7158;">45.000</p>
                         </div>
                     </div>
                     </a>

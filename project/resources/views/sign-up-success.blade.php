@@ -20,7 +20,7 @@
         </div>
     
         <div class="container">
-            <div class="row pt-3 text-center">
+            <div class="row pt-5 text-center">
                 <div class="col">
                     <img src="img/bag.png" alt="bag" style="width: 150px; height:150px">
                 </div>
@@ -38,9 +38,9 @@
             </div>
 
             <div class="row text-center mt-5">
-                <div class="col">
+                <a href="/" class="col">
                     <button type="button" class="btn btn-success" style="width:150px; height:44px;">Go to home</button>
-                </div>
+                </a>
             </div>
         </div>
     

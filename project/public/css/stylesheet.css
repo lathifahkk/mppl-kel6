@@ -17,7 +17,7 @@ a {
 
 .header-logo {
     float: left;
-    font-size: 24px;
+    font-size: 26px;
     padding: 35px 0px;
 }
 
@@ -33,28 +33,29 @@ a {
 .jumbotron-msg {
     margin-left: 40px;
     text-align: start;
-    font-size: 36px;
+    font-size: 52px;
     font-family: "Montserrat";
     position: absolute;
-    top: 220px;
-    width: 20%;
+    top: 250px;
+    width: 440px;
     color: white;
-    line-height: 38px;
+    line-height: 48px;
 }
 
 .jumbotron-msg-2 {
-    margin-left: 40px;
+    margin-left: 42px;
     text-align: start;
-    font-size: 18px;
+    font-size: 28px;
     font-family: "Montserrat";
     position: absolute;
-    top: 305px;
-    width: 15%;
+    top: 355px;
+    width: 380px;
     color: white;
+    line-height: 33px;
 }
 
 input {
-    width: 246px;
+    width: 372px;
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
@@ -65,6 +66,7 @@ input {
 
 .login p {
     margin-bottom: 6px;
+    font-size: 24px;
 }
 
 .btn {
@@ -141,19 +143,36 @@ input {
     border-radius: 8px;
 }
 
-.button-addnew{
+.button-addnew {
     width: fit-content;
-    background-color: #29A867;
+    background-color: #29a867;
     border-radius: 6px;
 }
 
-.card-product{
+.card-product {
     width: fit-content;
     height: max-content;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0px 4px 15px 0px #F1F1F8;
+    box-shadow: 0px 4px 15px 0px #f1f1f8;
     margin-top: 34px;
     display: list-item;
-    list-style-type : none;
+    list-style-type: none;
+}
+
+.menu-card {
+    width: 284px;
+    border-radius: 8px;
+    float: left;
+}
+
+.menu-card p {
+    font-size: 18px;
+}
+
+.btn-sign-in {
+    margin-top: 42px;
+    margin-bottom: 12px;
+    width: 372px;
+    height: 47px;
 }
