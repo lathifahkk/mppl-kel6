@@ -54,3 +54,7 @@ Route::get('/signup', function () {
 });
 
 Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/details', function () {
+    return view('details');
+});
