@@ -31,11 +31,11 @@ Route::get('/transaction-success', function () {
     return view('transaction-success');
 });
 
-Route::get('/product', function () {
+Route::get('/adminproduct', function () {
     return view('adminproduct');
 });
 
-Route::get('/transaction', function () {
+Route::get('/admintransaction', function () {
     return view('admintransaction');
 });
 
@@ -45,6 +45,10 @@ Route::get('/signup', function () {
 
 Route::get('/details', function () {
     return view('details');
+});
+
+Route::get('addproduct', function(){
+    return view('addproduct');
 });
 
 Route::post('/register', [RegisterController::class, 'store']);
@@ -62,7 +66,5 @@ Route::group(['middleware' => ['auth:user']], function(){
 });
 
 Route::group(['middleware' => ['auth:admin']], function(){
-    Route::get('/admin', function () {
-        return view('admindashboard');
-    });
+    Route::get('admin', 'App\Http\Controllers\AdminController@index');
 });

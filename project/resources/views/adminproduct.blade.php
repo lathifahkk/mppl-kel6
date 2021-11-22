@@ -13,8 +13,8 @@
     </head>
     <body style="background-color:#F5F5FB;">
         <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
-            <a href="#" class="navbar-brand text-light mt-5">
-                <img src="img/logo.png" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
+            <a class="navbar-brand text-light mt-5">
+                <img src="img\logo.png" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
             </a>
             <ul class="navbar-nav d-flex flex-column mt-5 w-100">
                 <li class="nav-item w-100" style="list-style-type : none; margin-top: 61px">
@@ -38,7 +38,7 @@
                 <a href="#" class="btn btn-primary active" aria-current="page" style="padding: 10px 20px 10px 20px; color:#FFFFFF;">Add New Product</a>
             </div>
             <div class="card-product dashboard">
-                <img src="img/product-1.jpg" class="card-img-top" alt="" width="214" height="160" style="margin: 13px 13px 0px 13px;">
+                <img src="img\menu-1.jpg" class="card-img-top" alt="" width="214" height="160" style="margin: 13px 13px 0px 13px;">
                 <div class="card-body" style="margin: 13px;">
                     <a class="card-title" href="#" style="font: size 18px; color:#0C0D36;">Nasi Pecel Nganjuk</a>
                     <p class="card-text" style="padding-bottom:13px; font: size 16px; color: #C5C5C5;">Rp. 11.000</p>

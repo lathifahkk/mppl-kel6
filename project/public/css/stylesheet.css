@@ -181,3 +181,11 @@ input {
     border-radius: 8px;
     float: left;
 }
+
+.card-add{
+    width: 80%;
+    height: fit-content;
+    background-color: #fefefe;
+    box-shadow: 0px 4px 15px #f1f1f8;
+    border-radius: 8px;
+}
