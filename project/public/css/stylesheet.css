@@ -176,3 +176,8 @@ input {
     width: 372px;
     height: 47px;
 }
+
+.details-image {
+    border-radius: 8px;
+    float: left;
+}
