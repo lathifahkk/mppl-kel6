@@ -27,7 +27,7 @@
                     <a href="#" class="nav-notselect">Transactions</a>
                 </li>
                 <li class="nav-item w-100" style="list-style-type : none; padding-top: 200px; padding-bottom:100px;">
-                    <a href="#" style="color: #FF7158; margin-right:100px;">Sign Out</a>
+                    <a href="{{url('logout')}}" style="color: #FF7158; margin-right:100px;">Sign Out</a>
                     <img src="img/Group 38.png" alt="" width="16" height="16" class="d-inline-block align-text-top">
                 </li>
             </ul>

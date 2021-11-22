@@ -46,21 +46,20 @@
                 <div class="col-6 login">
                     <h1 style="font-size: 32px;">Belanja Sambal Pecal Nganjuk,</h1>
                     <h1 style="font-size: 32px; margin-bottom:20px;">menjadi lebih mudah</h1>
-                    <p style="margin-top:58px;
-                    margin-bottom:18px;">Email Address</p>
-                    <input style="font-size: 18px;">
-                    <p style="margin-top:12px; margin-bottom:18px;">Password</p>
-                    <input style="font-size: 18px; margin-bottom:10px;">
-                    <p class="batas"></p>
-                    <a href="/sign-up-success" class="btn btn-sign-in" style="background-color: #29a867;
-                    color: #fff;
-                    font-size: 21px;
-                    line-height: 30px;
-                    ">Sign in to My Account</a>
+                    <form action="{{url('proses_login')}}" method="POST" id="logForm">
+                    @csrf
+                        <p style="margin-top:58px;
+                        margin-bottom:18px;">Email Address</p>
+                        <input style="font-size: 18px; background-color:#F3F3F3; width:60%;" class="form-control" type="text" name="email">
+                        <p style="margin-top:12px; margin-bottom:18px;">Password</p>
+                        <input style="font-size: 18px; margin-bottom:10px; background-color:#F3F3F3; width:60%;" class="form-control" type="password" name="password">
+                        <p class="batas"></p>
+                        <button class="btn btn-primary text-center btn-outline-light btn-sign-in" style="width:60%; color:#FFFFFF; background-color:#29A867;" type="submit">Sign In To My Account</button>
+                    </form>
                     <p class="batas"></p>
                     <a href="#" class="btn" style="background-color: #f3f3f3;
                     color: #bbb;
-                    width:372px;
+                    width:60%;
                     font-size: 21px;
                     line-height: 30px">Sign Up</a>
                 </div>
