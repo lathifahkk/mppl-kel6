@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,10 +32,6 @@ Route::get('/transaction-success', function () {
     return view('transaction-success');
 });
 
-Route::get('/adminproduct', function () {
-    return view('adminproduct');
-});
-
 Route::get('/admintransaction', function () {
     return view('admintransaction');
 });
@@ -47,9 +44,13 @@ Route::get('/details', function () {
     return view('details');
 });
 
-Route::get('addproduct', function(){
+Route::get('adminproduct/addproduct', function(){
     return view('addproduct');
 });
+
+Route::get('adminproduct', 'App\Http\Controllers\ProductController@index');
+
+Route::post('/addproduct', [ProductController::class, 'store']);
 
 Route::post('/register', [RegisterController::class, 'store']);
 

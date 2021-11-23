@@ -7,14 +7,14 @@
         <title>Admin Pecel Mba Mer</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="{{asset('css/stylesheet.css')}}">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     </head>
     <body style="background-color:#F5F5FB;">
         <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
             <a href="#" class="navbar-brand text-light mt-5">
-                <img src="img/logo.png" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
+                <img src="{{asset('img/logo.png')}}" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
             </a>
             <ul class="navbar-nav d-flex flex-column mt-5 w-100">
                 <li class="nav-item w-100 nav-select" style="list-style-type : none; margin-top: 61px">
