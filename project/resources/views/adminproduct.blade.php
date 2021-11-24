@@ -37,18 +37,24 @@
             <div class="btn-group dashboard button-addnew">
                 <a href="#" class="btn btn-primary active" aria-current="page" style="padding: 10px 20px 10px 20px; color:#FFFFFF;">Add New Product</a>
             </div>
-            @foreach ($product as $data)
-            <div class="card-product dashboard">
-                @if ($data->image)
-                <img src="{{asset('storage/' . $data->image )}}" class="card-img-top" alt="" width="214" height="160" style="margin: 13px 13px 0px 13px;">
-                @else
-                <img src="img\menu-3.jpg" class="card-img-top" alt="" width="214" height="160" style="margin: 13px 13px 0px 13px;">
-                @endif
-                <div class="card-body" style="margin: 13px;">
-                    <a class="card-title" href="#" style="font: size 18px; color:#0C0D36;">{{$data->productname}}</a>
-                    <p class="card-text" style="padding-bottom:13px; font: size 16px; color: #C5C5C5;">Rp. {{$data->price}}</p>
+            <div class="row dashboard">
+                @foreach ($product as $data)
+                <div class="col text-start" style="margin-right:40px;">
+                    <a href="#">
+                    <div class="card card-product">
+                    @if ($data->image)
+                    <img src="{{asset('storage/' . $data->image )}}" class="card-img-top" alt="" width="214" height="160" style="margin: 13px 13px 0px 13px;">
+                    @else
+                    <img src="img\menu-3.jpg" class="card-img-top" alt="" width="214" height="160" style="margin: 13px 13px 0px 13px;">
+                    @endif
+                        <div class="card-body" style="margin: 13px;">
+                          <p class="card-text mb-0" style="font: size 18px; color:#0C0D36;">{{$data->productname}}</p>
+                          <p class="card-text" style="padding-bottom:13px; font: size 16px; color: #C5C5C5;">Rp. {{$data->price}}</p>
+                        </div>
+                    </div>
+                    </a>
                 </div>
+                @endforeach
             </div>
-            @endforeach
     </body>
 </html>

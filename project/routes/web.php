@@ -65,9 +65,7 @@ Route::get('logout', 'App\Http\Controllers\AuthController@logout')->name('logout
 
 //auth
 Route::group(['middleware' => ['auth:user']], function(){
-    Route::get('/', function () {
-        return view('landing');
-    });
+    Route::get('landing', 'App\Http\Controllers\ProductController@userlanding');
 });
 
 Route::group(['middleware' => ['auth:admin']], function(){

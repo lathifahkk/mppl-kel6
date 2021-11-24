@@ -19,6 +19,13 @@ class ProductController extends Controller
         return view('adminproduct',compact('product'));
     }
 
+    public function userlanding()
+    {
+        $product = Product::all();
+
+        return view('landing',compact('product'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
