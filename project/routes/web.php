@@ -44,6 +44,10 @@ Route::get('/details', function () {
     return view('details');
 });
 
+Route::get('/check-out', function () {
+    return view('check-out');
+});
+
 Route::get('adminproduct/addproduct', function(){
     return view('addproduct');
 });
