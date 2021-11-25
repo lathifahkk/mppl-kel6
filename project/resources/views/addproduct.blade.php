@@ -16,7 +16,7 @@
             <a class="navbar-brand text-light mt-5">
                 <img src="{{asset('img/logo.png')}}" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
             </a>
-            <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <ul class="navbar-admin-nav d-flex flex-column mt-5 w-100">
                 <li class="nav-item w-100" style="list-style-type : none; margin-top: 61px">
                     <a href="#" class="nav-notselect">Dashboard</a>
                 </li>
@@ -26,7 +26,7 @@
                 <li class="nav-item w-100" style="list-style-type : none; margin-top: 24px">
                     <a href="#" class="nav-notselect">Transactions</a>
                 </li>
-                <li class="nav-item w-100" style="list-style-type : none; padding-top: 200px; padding-bottom:100px;">
+                <li class="nav-item w-100" style="list-style-type : none; padding-top: 200px; padding-bottom:200px;">
                     <a href="#" style="color: #FF7158; margin-right:100px;">Sign Out</a>
                     <img src="{{asset('img/Group 38.png')}}" alt="" width="16" height="16" class="d-inline-block align-text-top">
                 </li>

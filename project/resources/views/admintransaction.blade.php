@@ -34,13 +34,6 @@
         </nav>
             <h1 class="dashboard" style="color:#0C0D36; font: size 24px; margin-top: 34px;">Transactions</h1>
             <p class="dashboard" style="color:#9191A9; font: size 16px; margin-top: 6px;">Big result start from the small one</p>
-            <a href="#" class="d-flex bd-highlight dashboard card-recent">
-                <img src="img/image.png" alt="" width="44" height="44" class="d-inline-block align-text-top" style="margin-top:13px; margin-left:13px;">
-                <div class="p-2 flex-fill bd-highlight" style="margin-top:20px; margin-left:13px">Nasi Pecel Nganjuk</div>
-                <div class="p-2 flex-fill bd-highlight" style="margin-top:20px; margin-left:273px">21 November 2021</div>
-                <div class="p-2 flex-fill bd-highlight" style="margin-top:20px; margin-left:70px">
-                <img src="img/expand_more_24px.png" alt="" width="34" height="34" class="d-inline-block align-text-top"> 
-                </div>
-            </a>
+            
     </body>
 </html>

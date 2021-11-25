@@ -13,8 +13,9 @@ use App\Http\Controllers\ProductController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
+Route::get('/', function () {
+    return view('login');
+});
 
 Route::get('/online-product', function () {
     return view('online-product');
@@ -58,7 +59,7 @@ Route::post('/addproduct', [ProductController::class, 'store']);
 
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('login', 'App\Http\Controllers\AuthController@index')->name('login');
+Route::get('/', 'App\Http\Controllers\AuthController@index')->name('login');
 Route::post('proses_login', 'App\Http\Controllers\AuthController@proses_login')->name('proses_login');
 
 Route::get('logout', 'App\Http\Controllers\AuthController@logout')->name('logout');
@@ -70,4 +71,7 @@ Route::group(['middleware' => ['auth:user']], function(){
 
 Route::group(['middleware' => ['auth:admin']], function(){
     Route::get('admin', 'App\Http\Controllers\AdminController@index');
+    Route::get('adminproduct/addproduct', function(){
+        return view('addproduct');
+    });
 });

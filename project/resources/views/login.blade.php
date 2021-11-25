@@ -57,7 +57,7 @@
                         <button class="btn btn-primary text-center btn-outline-light btn-sign-in" style="width:60%; color:#FFFFFF; background-color:#29A867;" type="submit">Sign In To My Account</button>
                     </form>
                     <p class="batas"></p>
-                    <a href="#" class="btn" style="background-color: #f3f3f3;
+                    <a href="{{url('signup')}}" class="btn" style="background-color: #f3f3f3;
                     color: #bbb;
                     width:60%;
                     font-size: 21px;

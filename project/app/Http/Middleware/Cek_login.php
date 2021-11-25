@@ -18,7 +18,7 @@ class Cek_login
     public function handle(Request $request, Closure $next, $role)
     {
         if(!Auth::check){
-            return redirect('login');
+            return redirect('/');
         }
 
         $user == Auth::user();
@@ -26,6 +26,6 @@ class Cek_login
             return $next($request);
         }
 
-        return redirect('login')->with('error', "Kamu gapunya aksess!");
+        return redirect('/')->with('error', "Kamu gapunya aksess!");
     }
 }

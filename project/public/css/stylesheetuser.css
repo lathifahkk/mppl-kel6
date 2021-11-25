@@ -1,7 +1,6 @@
 html,
 body {
     font-family: "Poppins";
-    overflow-x: hidden;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -18,7 +17,7 @@ a {
 .header-logo {
     float: left;
     font-size: 26px;
-    padding: 35px 0px;
+    margin: 35px 0px;
 }
 
 .header-logo span {
@@ -97,12 +96,6 @@ input {
     padding-bottom: 30px;
 }
 
-.navbar {
-    height: 100%;
-    position: fixed;
-    background-color: #fefefe;
-}
-
 .logoadmin {
     padding-left: 85px;
     padding-top: 34px;
@@ -126,6 +119,7 @@ input {
 
 .dashboard {
     margin-left: 290px;
+    display: flex;
 }
 
 .card-dashboard {
@@ -160,7 +154,6 @@ input {
 }
 
 .menu-card {
-    width: 284px;
     border-radius: 8px;
     float: left;
 }

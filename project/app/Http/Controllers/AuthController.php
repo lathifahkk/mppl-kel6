@@ -38,15 +38,15 @@ class AuthController extends Controller
         if(Auth::guard('admin')->attempt(['admin' => $request->email, 'password' => $request->password])){
             return redirect('/admin');
         }elseif(Auth::guard('user')->attempt(['email' => $request->email, 'password' => $request->password])){
-            return redirect('/');
+            return redirect('/landing');
         }
-        return redirect('/login');
+        return redirect('/');
     }
 
     public function logout(Request $request){
         $request->session()->flush();
         Auth::logout();
-        return Redirect('login');
+        return Redirect('/');
     }
 
     /**
