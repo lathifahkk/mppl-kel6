@@ -30,10 +30,10 @@
           </li>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" style="color:#0C0D36; font-size: 18px; id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Hello, 
+            Hello, {{Auth::user()->name}}
           </a>
           <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Log Out</a></li>
+            <li><a class="dropdown-item" href="{{url('logout')}}">Log Out</a></li>
           </ul>
         </li>
         </ul>
@@ -81,7 +81,7 @@
               <div class="col">
                 <div class="p-3">
                 <div class="text-start menu-card">
-                    <a href="#">
+                    <a href="{{url('landing/' .$data->id)}}">
                     <div class="card" style="width: 284px; border-radius:8px; float:left;">
                     @if ($data->image)
                     <img src="{{asset('storage/' . $data->image )}}" class="card-img-top" alt="" width="284" height="140" style="">
@@ -89,8 +89,8 @@
                     <img src="img\menu-3.jpg" class="card-img-top" alt="" width="214" height="284" height="140" style="">
                     @endif
                         <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Pecal Tanpa Nasi</p>
-                          <p class="card-text" style="color:#FF7158;">9.000</p>
+                          <p class="card-text mb-0" style="color:#0C0D36;">{{$data->productname}}</p>
+                          <p class="card-text" style="color:#FF7158;">{{$data->price}}</p>
                         </div>
                     </div>
                     </a>

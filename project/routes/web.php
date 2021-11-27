@@ -45,10 +45,6 @@ Route::get('/details', function () {
     return view('details');
 });
 
-Route::get('/check-out', function () {
-    return view('check-out');
-});
-
 Route::get('adminproduct/addproduct', function(){
     return view('addproduct');
 });
@@ -67,6 +63,8 @@ Route::get('logout', 'App\Http\Controllers\AuthController@logout')->name('logout
 //auth
 Route::group(['middleware' => ['auth:user']], function(){
     Route::get('landing', 'App\Http\Controllers\ProductController@userlanding');
+    Route::get('landing/{id}', 'App\Http\Controllers\AuthController@show');
+    Route::get('landing/checkout/{id}', 'App\Http\Controllers\ProductController@checkout');
 });
 
 Route::group(['middleware' => ['auth:admin']], function(){

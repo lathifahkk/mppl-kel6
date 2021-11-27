@@ -16,7 +16,7 @@
   </head>
   <body>
     <!--navbar -->
-    <nav class="navbar">
+    <nav class="navbar ">
       <div class="container">
         <a class="navbar-brand">
             <div class="header-logo" style="color:#000000">Lo<span>go</span></div>
@@ -30,17 +30,17 @@
           </li>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" style="color:#0C0D36; font-size: 18px; id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Hello, 
+            Hello,
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Log Out</a></li>
+          <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{{url('logout')}}">Log Out</a></li>
           </ul>
         </li>
         </ul>
       </div>
     </nav>
-    
-        <div class="container">
+
+    <div class="container">
             <div class="row text-center">
                 <div class="col">
                     <img src="img/jumbotron.png" alt="bag" style="width:100%; height:500px">
@@ -51,75 +51,52 @@
         </div>
 
         <div class="container">
-            <div class="row mt-4 mb-0" style="font-size: 24px">
-                <div class="col ">
+            <div class="row mt-4" style="font-size: 24px">
+                <div class="col">
                     <p>
                         Offline Product
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col text-start menu-card">
-                    <a href="/nasi-pecel-nganjuk">
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+              <div class="col">
+                <div class="p-3">
+                <div class="text-start menu-card">
+                    <a href="{{url('landing/')}}">
                     <div class="card" style="width: 284px; border-radius:8px; float:left;">
-                        <img src="img/menu-1.jpg" class="card-img-top" alt="product">
+                    <img src="img\menu-3.jpg" class="card-img-top" alt="" width="214" height="284" height="140" style="">
                         <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Pecel Nganjuk</p>
-                          <p class="card-text" style="color:#FF7158;">11.000</p>
+                          <p class="card-text mb-0" style="color:#0C0D36;"></p>
+                          <p class="card-text" style="color:#FF7158;"></p>
                         </div>
                     </div>
                     </a>
                 </div>
-                <div class="col text-start menu-card">
-                    <a href="/nasi-sambal-tumpang">
-                    <div class="card" style="width: 284px; border-radius:8px; float:left;">
-                        <img src="img/menu-2.jpg" class="card-img-top" alt="product">
-                        <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Sambal Tumpang</p>
-                          <p class="card-text" style="color:#FF7158;">11.000</p>
-                        </div>
-                    </div>
-                    </a>
                 </div>
-                <div class="col text-start menu-card">
-                    <a href="/pecal-tanpa-nasi">
-                    <div class="card" style="width: 284px; border-radius:8px; float:left;">
-                        <img src="img/menu-3.jpg" class="card-img-top" alt="product">
-                        <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Pecal Tanpa Nasi</p>
-                          <p class="card-text" style="color:#FF7158;">9.000</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="col text-start menu-card">
-                    <a href="/nasi-gudeg">
-                    <div class="card" style="width: 284px; border-radius:8px; float:left;">
-                        <img src="img/menu-4.jpg" class="card-img-top" alt="product">
-                        <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;">Nasi Gudeg</p>
-                          <p class="card-text" style="color:#FF7158;">16.000</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
+              </div>
             </div>
         </div>
     
-        <div class="row text-center footer mt-4">
-            <div class="col">
-                <p>2021 Copyright Store. All Rights Reserved.</p>
-            </div>
+        <div class="container">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              </ul>
+              <p class="text-center text-muted">2021 Copyright Store. All Rights Reserved.</p>
+            </footer>
+          </div>
         </div>
-      </body>
-      <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
--->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>

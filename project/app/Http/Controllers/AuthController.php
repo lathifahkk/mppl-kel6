@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Product;
 
 class AuthController extends Controller
 {
@@ -57,7 +58,13 @@ class AuthController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = Product::where('id', $id)->get();
+
+        if($product[0]->category == "offline"){
+            return view('details', compact('product'));
+        } elseif($product[0]->category == "online"){
+            return view('detailsonline', compact('product'));
+        }
     }
 
     /**

@@ -61,6 +61,13 @@ class ProductController extends Controller
         return redirect('/adminproduct');
     }
 
+    public function checkout($id)
+    {
+        $product = Product::where('id', $id)->get();
+
+        return view('check-out', compact("product"));
+    }
+
     /**
      * Display the specified resource.
      *

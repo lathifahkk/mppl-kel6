@@ -76,7 +76,7 @@
                     </p>
                 </div>
                 <div class="col-6 text-end">
-                    <a href="#" class="btn btn-success btn-lg" style="width:120px font-size: 18px;">Go to Google Map</a>    
+                    <a href="{{url('landing/checkout/'.$product[0]->id)}}" class="btn btn-success btn-lg" style="width:120px font-size: 18px;">Go to Check Out</a>    
                 </div>
             </div>
         </div>
