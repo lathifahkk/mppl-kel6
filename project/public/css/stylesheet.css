@@ -104,28 +104,31 @@ input {
 }
 
 .logoadmin {
-    padding-left: 85px;
-    padding-top: 34px;
-    padding-right: 85px;
+    padding-left: 116px;
+    padding-top: 33px;
+    padding-right: 116px;
 }
 
 .nav-link {
-    font-size: 16px;
+    font-size: 21px;
     color: #0c0d36;
 }
 
 .nav-select {
     background-image: linear-gradient(to right, #ffffff, #ff7158);
+    line-height: 48px;
+    font-weight: bolder;
 }
 
 .nav-notselect {
-    font-size: 16px;
+    font-size: 21px;
     color: #c5c5c5;
-    margin-top: 24px;
+    margin-top: 21px;
 }
 
-.dashboard {
-    margin-left: 290px;
+.admin-container {
+    margin-left: 372px;
+    width: 1008px;
 }
 
 .card-dashboard {
@@ -181,10 +184,30 @@ input {
     float: left;
 }
 
-.card-add{
+.card-add {
     width: 80%;
     height: fit-content;
     background-color: #fefefe;
     box-shadow: 0px 4px 15px #f1f1f8;
     border-radius: 8px;
+}
+
+.dashboard-card {
+    width: 300px;
+    height: 162px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #fefefe;
+    margin-top: 18px;
+    margin-right: 33px;
+}
+
+.dashboard-card p {
+    color: #c5c5c5;
+    padding-left: 33px;
+}
+
+.dashboard-card h1 {
+    color: #0c0d36;
+    padding-left: 33px;
 }

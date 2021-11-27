@@ -17,23 +17,23 @@
                 <img src="img\logo.png" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
             </a>
             <ul class="navbar-nav d-flex flex-column mt-5 w-100">
-                <li class="nav-item w-100" style="list-style-type : none; margin-top: 61px">
-                    <a href="#" class="nav-notselect">Dashboard</a>
+                <li class="nav-item w-100" style="list-style-type : none; margin-top: 60px">
+                    <a href="/admin" class="nav-notselect">Dashboard</a>
                 </li>
                 <li class="nav-item w-100 nav-select" style="list-style-type : none; margin-top: 24px">
-                    <a href="#" class="nav-link">My Products</a>
+                    <a href="/adminproduct" class="nav-link">My Products</a>
                 </li>
                 <li class="nav-item w-100" style="list-style-type : none; margin-top: 24px">
-                    <a href="#" class="nav-notselect">Transactions</a>
+                    <a href="/admintransaction" class="nav-notselect">Transactions</a>
                 </li>
-                <li class="nav-item w-100" style="list-style-type : none; padding-top: 200px; padding-bottom:100px;">
-                    <a href="#" style="color: #FF7158; margin-right:100px;">Sign Out</a>
-                    <img src="img/Group 38.png" alt="" width="16" height="16" class="d-inline-block align-text-top">
+                <li class="nav-item w-100" style="list-style-type : none; padding-top: 300px; padding-bottom:100px;">
+                    <a href="{{url('logout')}}" style="color: #FF7158; margin-right:120px; font-size:21px;">Sign Out</a>
+                    <img src="img/Group 38.png" alt="" width="21" height="21" class="d-inline-block align-text-top" style="padding-right: 15px;">
                 </li>
             </ul>
         </nav>
-            <h1 class="dashboard" style="color:#0C0D36; font: size 24px; margin-top: 34px;">My Products</h1>
-            <p class="dashboard" style="color:#9191A9; font: size 16px; margin-top: 6px;">Manage it well and get money</p>
+            <h1 class="admin-container" style="color:#0C0D36; font: size 24px; margin-top: 34px;">My Products</h1>
+            <p class="admin-container" style="color:#9191A9; font: size 16px; margin-top: 6px;">Manage it well and get money</p>
             <div class="btn-group dashboard button-addnew">
                 <a href="adminproduct/addproduct" class="btn btn-primary active" aria-current="page" style="padding: 10px 20px 10px 20px; color:#FFFFFF;">Add New Product</a>
             </div>

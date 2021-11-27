@@ -12,28 +12,58 @@
 
     </head>
     <body style="background-color:#F5F5FB;">
-        <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        {{-- SIDE BAR --}}
+        <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar" style="width: 312px;">
             <a href="#" class="navbar-brand text-light mt-5">
-                <img src="{{asset('img/logo.png')}}" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
+                <img src="{{asset('img/logo.png')}}" alt="" width="80" height="95" class="d-inline-block align-text-top logoadmin">
             </a>
             <ul class="navbar-nav d-flex flex-column mt-5 w-100">
-                <li class="nav-item w-100 nav-select" style="list-style-type : none; margin-top: 61px">
-                    <a href="#" class="nav-link">Dashboard</a>
+                <li class="nav-item w-100 nav-select" style="list-style-type:none; margin-top: 60px">
+                    <a href="/admin" class="nav-link">Dashboard</a>
                 </li>
                 <li class="nav-item w-100" style="list-style-type : none; margin-top: 24px">
-                    <a href="#" class="nav-notselect">My Products</a>
+                    <a href="/adminproduct" class="nav-notselect">My Products</a>
                 </li>
                 <li class="nav-item w-100" style="list-style-type : none; margin-top: 24px">
-                    <a href="#" class="nav-notselect">Transactions</a>
+                    <a href="/admintransaction" class="nav-notselect">Transactions</a>
                 </li>
-                <li class="nav-item w-100" style="list-style-type : none; padding-top: 200px; padding-bottom:100px;">
-                    <a href="{{url('logout')}}" style="color: #FF7158; margin-right:100px;">Sign Out</a>
-                    <img src="img/Group 38.png" alt="" width="16" height="16" class="d-inline-block align-text-top">
+                <li class="nav-item w-100" style="list-style-type : none; padding-top: 300px; padding-bottom:100px;">
+                    <a href="{{url('logout')}}" style="color: #FF7158; margin-right:120px; font-size:21px;">Sign Out</a>
+                    <img src="img/Group 38.png" alt="" width="21" height="21" class="d-inline-block align-text-top" style="padding-right: 15px;">
                 </li>
             </ul>
         </nav>
-            <h1 class="dashboard" style="color:#0C0D36; font: size 24px; margin-top: 34px;">Dashboard</h1>
-            <p class="dashboard" style="color:#9191A9; font: size 16px; margin-top: 6px;">Look what you have made today!</p>
-            
+
+            <h1 class="admin-container" style="color:#0C0D36; font: size 24px; margin-top: 34px;">Dashboard</h1>
+            <p class="admin-container" style="color:#9191A9; font: size 16px; margin-top: 6px;">Look what you have made today!</p>
+            <div class="admin-container">
+                <div class="dashboard-card">
+                            <p style="
+                            margin-top: 42px;
+                            margin-bottom: 0px;
+                            "> Customer</p>
+                            <h1 style="
+                            margin-top: 6px;
+                            "> 15,000</h1>
+                </div>
+                <div class="dashboard-card">
+                            <p style="
+                            margin-top: 42px;
+                            margin-bottom: 0px;
+                            "> Revenue</p>
+                            <h1 style="
+                            margin-top: 6px;
+                            "> Rp. 931,290</h1>
+                </div>
+                <div class="dashboard-card">
+                            <p style="
+                            margin-top: 42px;
+                            margin-bottom: 0px;
+                            "> Transaction</p>
+                            <h1 style="
+                            margin-top: 6px;
+                            "> 201</h1>
+                </div>
+            </div>
     </body>
 </html>
