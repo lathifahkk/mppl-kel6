@@ -55,7 +55,7 @@
                             margin-top: 6px;
                             "> Rp. 931,290</h1>
                 </div>
-                <div class="dashboard-card">
+                <div class="dashboard-card" style="margin-right:0px;">
                             <p style="
                             margin-top: 42px;
                             margin-bottom: 0px;
@@ -63,6 +63,27 @@
                             <h1 style="
                             margin-top: 6px;
                             "> 201</h1>
+                </div>
+            </div>
+            <h1 class="admin-container" style="color:#0C0D36; font-size :21px; margin-top: 34px;">Recent Transactions</h1>
+            <div class="admin-container">
+                <div class="recent-card">
+                    <img src="img/image.png" alt="" width="55" height="55">
+                    <h3>Nasi Pecel Nganjuk</h3>
+                    <p>21 November, 2021</p>
+                    <a href="#"><img src="img/expand_more_24px.png" alt="" width="55" height="55"></a>
+                </div>
+                <div class="recent-card">
+                    <img src="img/image.png" alt="" width="55" height="55">
+                    <h3>Nasi Pecel Nganjuk</h3>
+                    <p>21 November, 2021</p>
+                    <a href="#"><img src="img/expand_more_24px.png" alt="" width="55" height="55"></a>
+                </div>
+                <div class="recent-card">
+                    <img src="img/image.png" alt="" width="55" height="55">
+                    <h3>Nasi Pecel Nganjuk</h3>
+                    <p>21 November, 2021</p>
+                    <a href="#"><img src="img/expand_more_24px.png" alt="" width="55" height="55"></a>
                 </div>
             </div>
     </body>

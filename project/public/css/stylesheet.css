@@ -199,7 +199,7 @@ input {
     border-radius: 8px;
     background-color: #fefefe;
     margin-top: 18px;
-    margin-right: 33px;
+    margin-right: 49px;
 }
 
 .dashboard-card p {
@@ -210,4 +210,34 @@ input {
 .dashboard-card h1 {
     color: #0c0d36;
     padding-left: 33px;
+}
+
+.recent-card {
+    width: 1008px;
+    height: 88px;
+    display: block;
+    border-radius: 8px;
+    background-color: #fefefe;
+    margin-top: 18px;
+}
+
+.recent-card img {
+    padding: 18px;
+    float: left;
+}
+
+.recent-card h3 {
+    width: 240px;
+    color: #0c0d36;
+    float: left;
+    padding-top: 12px;
+    padding-right: 60px;
+}
+
+.recent-card p {
+    width: 240px;
+    color: #0c0d36;
+    float: left;
+    padding-top: 18px;
+    padding-right: 285px;
 }
