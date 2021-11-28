@@ -14,30 +14,31 @@
     <body style="background-color:#F5F5FB;">
         <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
             <a class="navbar-brand text-light mt-5">
-                <img src="{{asset('img/logo.png')}}" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
+                <img src="public/img/logo.png" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
             </a>
-            <ul class="navbar-admin-nav d-flex flex-column mt-5 w-100">
-                <li class="nav-item w-100" style="list-style-type : none; margin-top: 61px">
-                    <a href="#" class="nav-notselect">Dashboard</a>
+            <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+                <li class="nav-item w-100" style="list-style-type : none; margin-top: 60px">
+                    <a href="/admin" class="nav-notselect">Dashboard</a>
                 </li>
                 <li class="nav-item w-100 nav-select" style="list-style-type : none; margin-top: 24px">
-                    <a href="#" class="nav-link">My Products</a>
+                    <a href="/adminproduct" class="nav-link">My Products</a>
                 </li>
                 <li class="nav-item w-100" style="list-style-type : none; margin-top: 24px">
-                    <a href="#" class="nav-notselect">Transactions</a>
+                    <a href="/admintransaction" class="nav-notselect">Transactions</a>
                 </li>
-                <li class="nav-item w-100" style="list-style-type : none; padding-top: 200px; padding-bottom:200px;">
-                    <a href="#" style="color: #FF7158; margin-right:100px;">Sign Out</a>
-                    <img src="{{asset('img/Group 38.png')}}" alt="" width="16" height="16" class="d-inline-block align-text-top">
+                <li class="nav-item w-100" style="list-style-type : none; padding-top: 300px; padding-bottom:100px;">
+                    <a href="{{url('logout')}}" style="color: #FF7158; margin-right:120px; font-size:21px;">Sign Out</a>
+                    <img src="img/Group 38.png" alt="" width="21" height="21" class="d-inline-block align-text-top" style="padding-right: 15px;">
                 </li>
             </ul>
         </nav>
+        <div class="admin-container">
             <h1 class="dashboard" style="color:#0C0D36; font: size 24px; margin-top: 34px;">Create New Product</h1>
             <p class="dashboard" style="color:#9191A9; font: size 16px; margin-top: 6px;">Create your own product</p>
             <form method="post" action="/addproduct" enctype="multipart/form-data">
             @csrf
-            <div class="card-add" style="margin-left: 290px; margin-right:65px; padding-bottom:34px;">
-            <ul class="list-group">
+            <div class="card-add">
+            <ul class="list-group" style="padding-left: 0px;">
                 <li class="list-group-item" style="display:flex;">
                     <div class="p-2 flex-fill bd-highlight" style="margin-top:36px; margin-left:38px; width:40%;">
                         Product Name
@@ -48,13 +49,13 @@
                 </li>
                 <li class="list-group-item" style="display:flex;">
                     <div class="p-2 flex-fill bd-highlight" style="margin-left:38px; width:40%;">
-                        <input type="text" class="form-control" id="" name="productname" style="width:100%;">
+                        <input type="text" class="form-control" id="" name="productname" style="width:90%;">
                         @error('productname')
                             <div class="invalid-feedback"> {{ $message }}</div>
                         @enderror
                     </div>
                     <div class="p-2 flex-fill bd-highlight" style="margin-left:26px; width:50%">
-                        <input type="number" class="form-control" id="" name="price" placeholder="150000" style="width:100%">
+                        <input type="number" class="form-control" id="" name="price" placeholder="150000" style="width:90%">
                         @error('price')
                             <div class="invalid-feedback"> {{ $message }}</div>
                         @enderror
@@ -80,9 +81,9 @@
                     Photo Product
                 </li>
                 <li class="list-group-item" style="margin-left:38px;  margin-right:55px; list-style-type : none;">
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-3" style="width: 730px;">
                         <input type="file" class="form-control" id="image" style="width:75%;" name="image">
-                        <label class="input-group-text" for="image" style="background-color:#BBBBBB; padding:10px 36px 10px 36px; border-radius:8px;">Upload</label>
+                        <label class="input-group-text" for="image" style="background-color:#BBBBBB; padding:10px 36px 10px 36px; border-radius:8px; margin-left: 28px;">Upload</label>
                     </div>
                 </li>
             </ul>
@@ -91,5 +92,6 @@
                 <button class="btn btn-primary text-center btn-outline-light" style="width:100%; color:#FFFFFF; background-color:#29A867; padding-top:10px; padding-bottom:10px; font-size:16px; border-radius:8px;" type="submit">Create Product</button>
             </div>
             </form>
+        </div>
     </body>
 </html>

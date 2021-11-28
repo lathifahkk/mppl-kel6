@@ -41,6 +41,10 @@ Route::get('/adminproduct', function () {
     return view('adminproduct');
 });
 
+Route::get('/admin', function () {
+    return view('admin');
+});
+
 Route::get('/signup', function () {
     return view('signup');
 });

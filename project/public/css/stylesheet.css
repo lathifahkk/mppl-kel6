@@ -241,3 +241,36 @@ input {
     padding-top: 18px;
     padding-right: 285px;
 }
+
+.myprod-card {
+    width: 280px;
+    height: 308px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #fefefe;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.myprod-card img {
+    padding: 18px;
+    float: left;
+}
+
+.myprod-card h3 {
+    width: 240px;
+    color: #0c0d36;
+    float: left;
+    padding-top: 0px;
+    padding-left: 18px;
+    margin: 0px;
+}
+
+.myprod-card p {
+    width: 240px;
+    color: #0c0d36;
+    float: left;
+    padding-top: 0px;
+    padding-left: 18px;
+    margin: 0px;
+}

@@ -32,13 +32,29 @@
                 </li>
             </ul>
         </nav>
-            <h1 class="admin-container" style="color:#0C0D36; font: size 24px; margin-top: 34px;">My Products</h1>
-            <p class="admin-container" style="color:#9191A9; font: size 16px; margin-top: 6px;">Manage it well and get money</p>
-            <div class="admin-container">
-            <div class="btn-group dashboard button-addnew">
+        <h1 class="admin-container" style="color:#0C0D36; font: size 24px; margin-top: 34px;">My Products</h1>
+        <p class="admin-container" style="color:#9191A9; font: size 16px; margin-top: 6px;">Manage it well and get money</p>
+        <div class="admin-container">
+            <div class="btn-group dashboard button-addnew" style="padding-top: 12px;padding-right: 0px;padding-bottom: 12px;">
                 <a href="adminproduct/addproduct" class="btn btn-primary active" aria-current="page" style="padding: 10px 20px 10px 20px; color:#FFFFFF;">Add New Product</a>
-            </div>
-            
-</div>
+            </div>    
+        </div>
+        <div class="admin-container">
+            <a class="myprod-card">
+                <img src="img/menu-2.jpg" alt="" width="250" height="186">
+                <h3>Nasi Pecel Nganjuk</h3>
+                <p>Rp. 11.000</p>
+            </a>
+            <a class="myprod-card">
+                <img src="img/menu-2.jpg" alt="" width="250" height="186">
+                <h3>Nasi Pecel Nganjuk</h3>
+                <p>Rp. 11.000</p>
+            </a>
+            <a class="myprod-card">
+                <img src="img/menu-2.jpg" alt="" width="250" height="186">
+                <h3>Nasi Pecel Nganjuk</h3>
+                <p>Rp. 11.000</p>
+            </a>
+        </div>
     </body>
 </html>
