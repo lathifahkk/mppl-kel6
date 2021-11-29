@@ -14,7 +14,7 @@
     <body style="background-color:#F5F5FB;">
         <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
             <a class="navbar-brand text-light mt-5">
-                <img src="public/img/logo.png" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
+                <img src="{{asset('img/logo.png')}}" alt="" width="79" height="95" class="d-inline-block align-text-top logoadmin">
             </a>
             <ul class="navbar-nav d-flex flex-column mt-5 w-100">
                 <li class="nav-item w-100" style="list-style-type : none; margin-top: 60px">
@@ -28,7 +28,7 @@
                 </li>
                 <li class="nav-item w-100" style="list-style-type : none; padding-top: 300px; padding-bottom:100px;">
                     <a href="{{url('logout')}}" style="color: #FF7158; margin-right:120px; font-size:21px;">Sign Out</a>
-                    <img src="img/Group 38.png" alt="" width="21" height="21" class="d-inline-block align-text-top" style="padding-right: 15px;">
+                    <img src="{{asset('img/Group 38.png')}}" alt="" width="21" height="21" class="d-inline-block align-text-top" style="padding-right: 15px;">
                 </li>
             </ul>
         </nav>

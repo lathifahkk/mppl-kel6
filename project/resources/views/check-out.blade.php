@@ -46,12 +46,15 @@
                 <p>Product / Product Details / <span style="color: #0c0d36;"> Check Out</span></p>
             </div>
         </div>
+        <form action="/transaction-success" method="post">
+        @csrf
         {{-- cart details --}}
         <div class="container">
             <div class="row text-start">
                 <div class="col-4">
                     <p>Image</p>
                     <img src="{{asset('storage/' . $product[0]->image )}}" alt="product" style="border-radius:8px; width:260px;">
+                    <input type="hidden" id="id_products" name="id_products" value={{$product[0]->id}}>
                 </div>
                 <div class="col-3">
                     <p style="margin-bottom:38px;">Name</p>
@@ -73,6 +76,7 @@
                     function myFunction() {
                         var x = parseInt(document.getElementById("amount").value) * <?php echo $product; ?> + 20000;
                         document.getElementById("demo").innerHTML = "Rp. " + x;
+                        document.getElementById("totalcost").innerHTML = x;
                     }
                     </script>
                 </div>
@@ -87,11 +91,11 @@
             <div class="row">
                 <div class="col-6">
                     <p>Address 1</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->address1}}}" class="form-control" type="text" name="address-1">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->address1}}}" class="form-control" type="text" name="address1">
                 </div>
                 <div class="col-6">
                     <p>Address 2</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->address2}}}" class="form-control" type="text" name="address-2">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->address2}}}" class="form-control" type="text" name="address2">
                 </div>
             </div>
             <div class="row mt-3">
@@ -105,17 +109,17 @@
                 </div>
                 <div class="col-4">
                     <p>Postal Code</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:85%;" value="{{{Auth::user()->postalcode}}}" class="form-control" type="number" name="postal-code">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:85%;" value="{{{Auth::user()->postalcode}}}" class="form-control" type="number" name="postalcode">
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-6">
                     <p>Nama</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->name}}}" class="form-control" type="text" name="country">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->name}}}" class="form-control" type="text" name="name">
                 </div>
                 <div class="col-6">
                     <p>Phone Number</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->mobile}}}" class="form-control" type="text" name="phone-number">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->mobile}}}" class="form-control" type="text" name="mobile">
                 </div>
             </div>
         </div>
@@ -135,10 +139,11 @@
                     <p style="color: #979797;">Total Cost</p>
                 </div>
                 <div class="col-3">
-                    <a href="#" class="btn btn-success btn-lg" style="width:100%; font-size: 18px;">Checkout Now</a>    
+                    <button class="btn btn-success btn-lg" style="width:100%; font-size: 18px;" type="submit">Check Out Now</button>
                 </div>
             </div>
         </div>
+        </form>
     
         <div class="row text-center footer mt-4">
             <div class="col">

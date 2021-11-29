@@ -67,24 +67,14 @@
             </div>
             <h1 class="admin-container" style="color:#0C0D36; font-size :21px; margin-top: 34px;">Recent Transactions</h1>
             <div class="admin-container">
+            @foreach ($transaction as $data)
                 <div class="recent-card">
-                    <img src="img/image.png" alt="" width="55" height="55">
-                    <h3>Nasi Pecel Nganjuk</h3>
-                    <p>21 November, 2021</p>
+                    <img src="{{asset('storage/' . $data->image )}}" alt="" width="55" height="55">
+                    <h3>{{$data->productname}}</h3>
+                    <p>{{$data->created_at}}</p>
                     <a href="#"><img src="img/expand_more_24px.png" alt="" width="55" height="55"></a>
                 </div>
-                <div class="recent-card">
-                    <img src="img/image.png" alt="" width="55" height="55">
-                    <h3>Nasi Pecel Nganjuk</h3>
-                    <p>21 November, 2021</p>
-                    <a href="#"><img src="img/expand_more_24px.png" alt="" width="55" height="55"></a>
-                </div>
-                <div class="recent-card">
-                    <img src="img/image.png" alt="" width="55" height="55">
-                    <h3>Nasi Pecel Nganjuk</h3>
-                    <p>21 November, 2021</p>
-                    <a href="#"><img src="img/expand_more_24px.png" alt="" width="55" height="55"></a>
-                </div>
+            @endforeach
             </div>
     </body>
 </html>

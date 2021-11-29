@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\transaction;
+use Illuminate\Support\Facades\DB;
+use App\Models\Product;
 
 class AdminController extends Controller
 {
@@ -13,7 +16,29 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admindashboard');
+        $transaction = DB::table('transactions')->join('products', 'transactions.id_products', '=', 'products.id')
+        ->select('transactions.id','transactions.created_at','transactions.name', 'transactions.mobile', 'transactions.address1',
+        'transactions.address2', 'transactions.province', 'transactions.city', 'transactions.postalcode', 'transactions.amount',
+        'transactions.totalprice', 'products.id', 'products.productname', 'products.price', 'products.category', 'products.description',
+        'products.image')->orderby('transactions.id', 'desc')->get();
+        
+        return view('admindashboard',compact('transaction'));
+    }
+
+    public function adminproduct(){
+        $product = Product::all();
+
+        return view('adminproduct',compact('product'));
+    }
+
+    public function admintransaction(){
+        $transaction = DB::table('transactions')->join('products', 'transactions.id_products', '=', 'products.id')
+        ->select('transactions.id','transactions.created_at','transactions.name', 'transactions.mobile', 'transactions.address1',
+        'transactions.address2', 'transactions.province', 'transactions.city', 'transactions.postalcode', 'transactions.amount',
+        'transactions.totalprice', 'products.id', 'products.productname', 'products.price', 'products.category', 'products.description',
+        'products.image')->orderby('transactions.id', 'desc')->get();
+        
+        return view('admintransaction',compact('transaction'));
     }
 
     /**

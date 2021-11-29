@@ -13,7 +13,7 @@ class RegisterController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email:dns|unique:users',
             'password' => 'required|min:5',
-            'mobile' => 'required|required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+            'mobile' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
             'address1' => 'required|max:255',
             'address2' => 'required|max:255',
             'province' => 'required|max:255',

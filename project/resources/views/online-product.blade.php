@@ -30,7 +30,7 @@
           </li>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" style="color:#0C0D36; font-size: 18px; id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Hello,
+            Hello, {{Auth::user()->name}}
           </a>
           <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="{{url('logout')}}">Log Out</a></li>
@@ -51,32 +51,35 @@
         </div>
 
         <div class="container">
-            <div class="row mt-4" style="font-size: 24px">
-                <div class="col">
+            <div class="row mt-4 mb-0" style="font-size: 24px">
+                <div class="col ">
                     <p>
                         Online Product
                     </p>
                 </div>
             </div>
-        </div>
-
-        <div class="container">
             <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+            @foreach ($product as $data)
               <div class="col">
                 <div class="p-3">
                 <div class="text-start menu-card">
-                    <a href="{{url('landing/')}}">
+                    <a href="{{url('landing/' .$data->id)}}">
                     <div class="card" style="width: 284px; border-radius:8px; float:left;">
+                    @if ($data->image)
+                    <img src="{{asset('storage/' . $data->image )}}" class="card-img-top" alt="" width="284" height="140" style="">
+                    @else
                     <img src="img\menu-3.jpg" class="card-img-top" alt="" width="214" height="284" height="140" style="">
+                    @endif
                         <div class="card-body">
-                          <p class="card-text mb-0" style="color:#0C0D36;"></p>
-                          <p class="card-text" style="color:#FF7158;"></p>
+                          <p class="card-text mb-0" style="color:#0C0D36;">{{$data->productname}}</p>
+                          <p class="card-text" style="color:#FF7158;">{{$data->price}}</p>
                         </div>
                     </div>
                     </a>
                 </div>
                 </div>
               </div>
+            @endforeach
             </div>
         </div>
     

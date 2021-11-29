@@ -14,9 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $product = Product::all();
 
-        return view('adminproduct',compact('product'));
     }
 
     public function userlanding()
@@ -68,6 +66,18 @@ class ProductController extends Controller
         return view('check-out', compact("product"));
     }
 
+    public function offlineproduct()
+    {
+        $product = Product::where('category', 'offline')->get();
+
+        return view('offline-product', compact("product"));
+    }
+    public function onlineproduct()
+    {
+        $product = Product::where('category', 'online')->get();
+
+        return view('online-product', compact("product"));
+    }
     /**
      * Display the specified resource.
      *
