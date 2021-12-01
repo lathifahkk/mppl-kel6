@@ -131,6 +131,10 @@ input {
     width: 1008px;
 }
 
+.admin-container span {
+    color: #0c0d36;
+}
+
 .card-dashboard {
     background-color: #fefefe;
     box-shadow: 0px 4px 15px #f1f1f8;
@@ -273,4 +277,48 @@ input {
     padding-top: 0px;
     padding-left: 18px;
     margin: 0px;
+}
+
+.transaction-details-card {
+    width: 966px;
+    height: 756px;
+    display: block;
+    border-radius: 8px;
+    background-color: #fefefe;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.transaction-details-card img {
+    float: left;
+}
+
+.transaction-details-card h3 {
+    float: left;
+    margin: 0px;
+    width: 242px;
+    color: #c5c5c5;
+}
+.transaction-details-card p {
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    width: 242px;
+    color: #0c0d36;
+}
+
+.tdc-col {
+    width: 242px;
+    padding: 40px;
+    float: left;
+}
+
+.btn-tdc {
+    margin-top: 340px;
+    width: 190px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #29a867;
+    color: white;
+    font-size: 20px;
 }
