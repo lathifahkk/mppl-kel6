@@ -68,7 +68,10 @@
                 </div>
                 <div class="col-3">
                     <p style="margin-bottom:38px;">Amount</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:79%;" onclick="myFunction()" class="form-control" type="number" name="amount" id="amount" value="1" min="1">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:79%;" class="form-control @error('amount') is-invalid @enderror" onclick="myFunction()" type="number" name="amount" id="amount" value="1" min="1">
+                    @error('amount')
+                            <div class="invalid-feedback"> {{ $message }}</div>
+                    @enderror
                     <?php
                         $product = $product[0]->price;
                     ?>
@@ -91,35 +94,56 @@
             <div class="row">
                 <div class="col-6">
                     <p>Address 1</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->address1}}}" class="form-control" type="text" name="address1">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->address1}}}" class="form-control @error('address1') is-invalid @enderror" type="text" name="address1">
+                    @error('address1')
+                            <div class="invalid-feedback"> {{ $message }}</div>
+                        @enderror
                 </div>
                 <div class="col-6">
                     <p>Address 2</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->address2}}}" class="form-control" type="text" name="address2">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->address2}}}" class="form-control @error('address2') is-invalid @enderror" type="text" name="address2">
+                    @error('address2')
+                            <div class="invalid-feedback"> {{ $message }}</div>
+                        @enderror
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-4">
                     <p>Province</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->province}}}" class="form-control" type="text" name="province">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->province}}}" class="form-control @error('province') is-invalid @enderror" type="text" name="province">
+                    @error('province')
+                            <div class="invalid-feedback"> {{ $message }}</div>
+                        @enderror
                 </div>
                 <div class="col-4">
                     <p>City</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->city}}}" class="form-control" type="text" name="city">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->city}}}" class="form-control @error('city') is-invalid @enderror" type="text" name="city">
+                    @error('city')
+                            <div class="invalid-feedback"> {{ $message }}</div>
+                        @enderror
                 </div>
                 <div class="col-4">
                     <p>Postal Code</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:85%;" value="{{{Auth::user()->postalcode}}}" class="form-control" type="number" name="postalcode">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:85%;" value="{{{Auth::user()->postalcode}}}" class="form-control @error('postalcode') is-invalid @enderror" type="number" name="postalcode">
+                    @error('postalcode')
+                            <div class="invalid-feedback"> {{ $message }}</div>
+                        @enderror
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-6">
                     <p>Nama</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->name}}}" class="form-control" type="text" name="name">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->name}}}" class="form-control @error('name') is-invalid @enderror" type="text" name="name">
+                    @error('name')
+                            <div class="invalid-feedback"> {{ $message }}</div>
+                        @enderror
                 </div>
                 <div class="col-6">
                     <p>Phone Number</p>
-                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->mobile}}}" class="form-control" type="text" name="mobile">
+                    <input style="font-size: 18px; background-color:#F3F3F3; width:90%;" value="{{{Auth::user()->mobile}}}" class="form-control @error('mobile') is-invalid @enderror" type="text" name="mobile">
+                    @error('mobile')
+                            <div class="invalid-feedback"> {{ $message }}</div>
+                        @enderror
                 </div>
             </div>
         </div>

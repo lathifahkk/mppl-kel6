@@ -49,13 +49,13 @@
                 </li>
                 <li class="list-group-item" style="display:flex;">
                     <div class="p-2 flex-fill bd-highlight" style="margin-left:38px; width:40%;">
-                        <input type="text" class="form-control" id="" name="productname" style="width:90%;">
+                        <input type="text" class="form-control @error('productname') is-invalid @enderror" id="" value="{{old('productname')}}" name="productname" style="width:90%;">
                         @error('productname')
                             <div class="invalid-feedback"> {{ $message }}</div>
                         @enderror
                     </div>
                     <div class="p-2 flex-fill bd-highlight" style="margin-left:26px; width:50%">
-                        <input type="number" class="form-control" id="" name="price" placeholder="150000" style="width:90%">
+                        <input type="number" class="form-control @error('price') is-invalid @enderror" id="" value="{{old('price')}}" name="price" placeholder="150000" style="width:90%" min="1000">
                         @error('price')
                             <div class="invalid-feedback"> {{ $message }}</div>
                         @enderror
@@ -75,15 +75,21 @@
                     Description
                 </li>
                 <li class="list-group-item" style="margin-left:38px;  margin-right:55px; list-style-type : none;">
-                    <textarea class="form-control" name="description" rows="10" style="width:100%; padding-top:10px; padding-bottom:10px; background-color:#F3F3F3; border: 6px solid transparent; border-radius: 8px;"></textarea>
+                    <textarea class="form-control @error('description') is-invalid @enderror" value="{{old('description')}}" name="description" rows="10" style="width:100%; padding-top:10px; padding-bottom:10px; background-color:#F3F3F3; border: 6px solid transparent; border-radius: 8px;"></textarea>
+                    @error('description')
+                            <div class="invalid-feedback"> {{ $message }}</div>
+                        @enderror
                 </li>
                 <li class="list-group-item" style="margin-top:19px; margin-left:38px;  margin-right:55px; list-style-type : none;">
                     Photo Product
                 </li>
                 <li class="list-group-item" style="margin-left:38px;  margin-right:55px; list-style-type : none;">
                     <div class="input-group mb-3" style="width: 730px;">
-                        <input type="file" class="form-control" id="image" style="width:75%;" name="image">
+                        <input type="file" class="form-control @error('image') is-invalid @enderror" id="image" style="width:75%;" name="image">
                         <label class="input-group-text" for="image" style="background-color:#BBBBBB; padding:10px 36px 10px 36px; border-radius:8px; margin-left: 28px;">Upload</label>
+                        @error('image')
+                            <div class="invalid-feedback"> {{ $message }}</div>
+                        @enderror
                     </div>
                 </li>
             </ul>
