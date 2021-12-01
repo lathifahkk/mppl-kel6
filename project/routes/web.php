@@ -17,32 +17,12 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::get('/online-product', function () {
-    return view('online-product');
-});
-
 Route::get('/offline-product', function () {
     return view('offline-product');
 });
 
 Route::get('/sign-up-success', function () {
     return view('sign-up-success');
-});
-
-Route::get('/transaction-success', function () {
-    return view('transaction-success');
-});
-
-Route::get('/admintransaction', function () {
-    return view('admintransaction');
-});
-
-Route::get('/adminproduct', function () {
-    return view('adminproduct');
-});
-
-Route::get('/admin', function () {
-    return view('admin');
 });
 
 Route::get('/signup', function () {
@@ -57,9 +37,6 @@ Route::get('adminproduct/addproduct', function(){
     return view('addproduct');
 });
 
-Route::get('/transaction-details', function(){
-    return view('transaction-details');
-});
 
 Route::get('adminproduct', 'App\Http\Controllers\ProductController@index');
 
@@ -77,11 +54,19 @@ Route::group(['middleware' => ['auth:user']], function(){
     Route::get('landing', 'App\Http\Controllers\ProductController@userlanding');
     Route::get('landing/{id}', 'App\Http\Controllers\AuthController@show');
     Route::get('landing/checkout/{id}', 'App\Http\Controllers\ProductController@checkout');
+    Route::post('/transaction-success', 'App\Http\Controllers\TransactionsController@store');
+    Route::get('transaction-success', 'App\Http\Controllers\TransactionsController@index');
+
+    Route::get('offline-product', 'App\Http\Controllers\ProductController@offlineproduct');
+    Route::get('online-product', 'App\Http\Controllers\ProductController@onlineproduct');
 });
 
 Route::group(['middleware' => ['auth:admin']], function(){
     Route::get('admin', 'App\Http\Controllers\AdminController@index');
+    Route::get('adminproduct', 'App\Http\Controllers\AdminController@adminproduct');
     Route::get('adminproduct/addproduct', function(){
         return view('addproduct');
     });
+    Route::get('admintransaction', 'App\Http\Controllers\AdminController@admintransaction');
+    Route::get('transaction-details', 'App\Http\Controllers\AdminController@transaction-details');
 });

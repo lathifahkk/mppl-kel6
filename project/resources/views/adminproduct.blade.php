@@ -40,21 +40,13 @@
             </div>    
         </div>
         <div class="admin-container">
-            <a href="#" class="myprod-card">
-                <img src="img/menu-2.jpg" alt="" width="250" height="186">
-                <h3>Nasi Pecel Nganjuk</h3>
-                <p>Rp. 11.000</p>
+            @foreach($product as $data)
+            <a  href="#" class="myprod-card">
+                <img src="{{asset('storage/' . $data->image )}}" alt="" width="250" height="186">
+                <h3>{{$data->productname}}</h3>
+                <p style="color:#C5C5C5;">Rp. {{$data->price}}</p>
             </a>
-            <a href="#" class="myprod-card">
-                <img src="img/menu-2.jpg" alt="" width="250" height="186">
-                <h3>Nasi Pecel Nganjuk</h3>
-                <p>Rp. 11.000</p>
-            </a>
-            <a href="#" class="myprod-card">
-                <img src="img/menu-2.jpg" alt="" width="250" height="186">
-                <h3>Nasi Pecel Nganjuk</h3>
-                <p>Rp. 11.000</p>
-            </a>
+            @endforeach
         </div>
     </body>
 </html>
