@@ -40,59 +40,16 @@
       </div>
     </nav>
         
-        {{-- section --}}
-        <div class="container">
-            <div class="row" style="color: #979797; margin-bottom:12px;">
-                <p>Product /<span style="color: #0c0d36;"> Product Details</span></p>
-            </div>
-        </div>
-
-        {{-- product images --}}
-        <div class="container">
-            <div class="row text-start">
-                <div class="col-10">
-                    <img src="{{asset('storage/' . $product[0]->image )}}" alt="bag" style="width:1051px; height:655px;">
-                </div>
-                <div class="col-2">
-                    <img  src="{{asset('storage/' . $product[0]->image )}}" alt="bag" style="width:196px; height:144px; border-radius:8px; margin-bottom:25px;">
-                    <img  src="{{asset('storage/' . $product[0]->image )}}" alt="bag" style="width:196px; height:144px; border-radius:8px; margin-bottom:25px;">
-                    <img  src="{{asset('storage/' . $product[0]->image )}}" alt="bag" style="width:196px; height:144px; border-radius:8px; margin-bottom:25px;">
-                    <img  src="{{asset('storage/' . $product[0]->image )}}" alt="bag" style="width:196px; height:144px; border-radius:8px;">
+        <div class="container text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3015005222182!2d106.89673581481681!3d-6.223918762689166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f35ac0909bc3%3A0x607b85d7827aaf8b!2sNasi%20Pecel%20Sambel%20Tumpang%20Nganjuk!5e0!3m2!1sen!2sid!4v1638429228638!5m2!1sen!2sid" width="600" height="440" style="border:1px solid;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="row justify-content-center mt-3">
+                <div class="col-4">
+                    <a href="/landing" class="btn btn-success btn-lg" style="width:190px; font-size: 18px;">Back to Home</a>    
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row mt-4" style="font-size: 24px">
-                <div class="col-6">
-                    <p class="mb-0 fw-bolder">
-                        {{$product[0]->productname}}
-                    </p>
-                    <p class="mb-0" style="color:#979797;">
-                    {{$product[0]->category}}
-                    </p>
-                    <p class="mb-0 fw-bolder" style="color:#FF7158;"> 
-                        Rp. {{$product[0]->price}}
-                    </p>
-                </div>
-                <div class="col-6 text-end">
-                    <a href="/maps" class="btn btn-success btn-lg" style="width:120px font-size: 18px;">Go to Google Map</a>    
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row mt-4 mb-0" style="font-size: 24px">
-                <div class="col ">
-                    <p>
-                        Deskripsi
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <p> {{$product[0]->description}}</p>
-            </div>
-        </div>
+        
     
         <div class="row text-center footer mt-4">
             <div class="col">

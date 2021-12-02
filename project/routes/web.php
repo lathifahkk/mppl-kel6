@@ -16,6 +16,9 @@ use App\Http\Controllers\ProductController;
 Route::get('/', function () {
     return view('login');
 });
+Route::get('/maps', function () {
+    return view('maps');
+});
 
 Route::get('/sign-up-success', function () {
     return view('sign-up-success');
@@ -40,7 +43,7 @@ Route::group(['middleware' => ['auth:user']], function(){
     Route::get('landing/checkout/{id}', 'App\Http\Controllers\ProductController@checkout');
     Route::post('/transaction-success', 'App\Http\Controllers\TransactionsController@store');
     Route::get('transaction-success', 'App\Http\Controllers\TransactionsController@index');
-
+    Route::get('maps', 'App\Http\Controllers\ProductController@userMaps');
     Route::get('offline-product', 'App\Http\Controllers\ProductController@offlineproduct');
     Route::get('online-product', 'App\Http\Controllers\ProductController@onlineproduct');
 });

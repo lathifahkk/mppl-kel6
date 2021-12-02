@@ -23,6 +23,13 @@ class ProductController extends Controller
 
         return view('landing',compact('product'));
     }
+    
+    public function userMaps()
+    {
+        $product = Product::all();
+
+        return view('maps',compact('product'));
+    }
 
     /**
      * Show the form for creating a new resource.
