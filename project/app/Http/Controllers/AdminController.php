@@ -35,10 +35,17 @@ class AdminController extends Controller
         $transaction = DB::table('transactions')->join('products', 'transactions.id_products', '=', 'products.id')
         ->select('transactions.id','transactions.created_at','transactions.name', 'transactions.mobile', 'transactions.address1',
         'transactions.address2', 'transactions.province', 'transactions.city', 'transactions.postalcode', 'transactions.amount',
-        'transactions.totalprice', 'products.id', 'products.productname', 'products.price', 'products.category', 'products.description',
+        'transactions.totalprice', 'products.productname', 'products.price', 'products.category', 'products.description',
         'products.image')->orderby('transactions.id', 'desc')->get();
         
         return view('admintransaction',compact('transaction'));
+    }
+
+    public function transactiondetails($id){
+        $transaction = transaction::where('id', $id)->get();
+        $product = Product::where('id', $transaction[0]->id_products)->get();
+        
+        return view('transaction-details',compact('transaction','product'));
     }
 
     /**

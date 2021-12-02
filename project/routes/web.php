@@ -17,10 +17,6 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::get('/offline-product', function () {
-    return view('offline-product');
-});
-
 Route::get('/sign-up-success', function () {
     return view('sign-up-success');
 });
@@ -29,18 +25,6 @@ Route::get('/signup', function () {
     return view('signup');
 });
 
-Route::get('/details', function () {
-    return view('details');
-});
-
-Route::get('adminproduct/addproduct', function(){
-    return view('addproduct');
-});
-
-
-Route::get('adminproduct', 'App\Http\Controllers\ProductController@index');
-
-Route::post('/addproduct', [ProductController::class, 'store']);
 
 Route::post('/register', [RegisterController::class, 'store']);
 
@@ -67,6 +51,8 @@ Route::group(['middleware' => ['auth:admin']], function(){
     Route::get('adminproduct/addproduct', function(){
         return view('addproduct');
     });
+    Route::post('/addproduct', [ProductController::class, 'store']);
+    Route::get('adminproduct/detail/{id}', 'App\Http\Controllers\ProductController@detail');
     Route::get('admintransaction', 'App\Http\Controllers\AdminController@admintransaction');
-    Route::get('transaction-details', 'App\Http\Controllers\AdminController@transaction-details');
+    Route::get('transaction/{id}', 'App\Http\Controllers\AdminController@transactiondetails');
 });

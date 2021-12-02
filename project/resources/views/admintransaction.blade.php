@@ -40,7 +40,7 @@
                 <img src="{{asset('storage/' . $data->image )}}" alt="" width="55" height="55">
                 <h3>{{$data->productname}}</h3>
                 <p>{{$data->created_at}}</p>
-                <a href="#"><img src="img/expand_more_24px.png" alt="" width="55" height="55"></a>
+                <a href="{{url('transaction/' .$data->id)}}"><img src="img/expand_more_24px.png" alt="" width="55" height="55"></a>
             </div>
             @endforeach
         </div> 

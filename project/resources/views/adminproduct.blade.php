@@ -41,7 +41,7 @@
         </div>
         <div class="admin-container">
             @foreach($product as $data)
-            <a  href="#" class="myprod-card">
+            <a  href="{{url('adminproduct/detail/' . $data->id )}}" class="myprod-card">
                 <img src="{{asset('storage/' . $data->image )}}" alt="" width="250" height="186">
                 <h3>{{$data->productname}}</h3>
                 <p style="color:#C5C5C5;">Rp. {{$data->price}}</p>
