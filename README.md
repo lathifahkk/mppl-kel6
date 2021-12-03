@@ -121,15 +121,15 @@ Fungsi utama yang dikembangkan dari Website Pecel Mbak Mer adalah
 [`^ kembali ke atas ^`](#) 
 * 
 
-## 10. Developer dan jobdeks
+## 10. Our Team
 [`^ kembali ke atas ^`](#) 
- Nama |NIM | Jobdesk |
- :---:|:---:| :---:|
-Lathifah Kurnia K | G64180023 |  |
-Cristmas Anggario| G64180058 | |
-Muhammad Abiyyu Habibi |  G64180066 | |
-Muhammad Faishal Mumtaz |  G64180093 | |
-Rakheda Andria Parastu | G64180105 | |
+ Nama |NIM | 
+ :---:|:---:| 
+Lathifah Kurnia K | G64180023 |  
+Cristmas Anggario| G64180058 | 
+Muhammad Abiyyu Habibi |  G64180066 | 
+Muhammad Faishal Mumtaz |  G64180093 | 
+Rakheda Andria Parastu | G64180105 | 
 
 
 ## Dokumentasi
@@ -138,16 +138,4 @@ Rakheda Andria Parastu | G64180105 | |
 * [Figma](https://www.figma.com/file/ypkxE9ihvyq8pmZzmqilsu/Website-Nasi-Pecel?node-id=0%3A1)
 * [Trello](https://trello.com/b/mdtk36dC/mppl)
 * [Draw,io](https://app.diagrams.net/#G1_Pj8uWUc0cxpYM3IZY9guITBzjMcST3o)
-
-
-## Referensi
-[`^ kembali ke atas ^`](#) 
-<br>
-[MVC](https://medium.com/@sagarmaheshwary31/laravel-5-8-from-scratch-intro-setup-mvc-basics-and-views-74d46f93fe0c) 
-[Model](https://www.iltekkomputer.com/tutorial-laravel-5-7-part-3-cara-memahami-konsep-mvc-di-framework-laravel/) 
-[MVC](https://www.codetutors.org/what-mvc-is-and-how-does-this-pattern-work-in-laravel-8/)
-[MVC](https://www.niagahoster.co.id/blog/mvc-adalah)
-[Konsep OOP](http://repository.uinsu.ac.id/9202/1/2.%20Suendri%20-%20Modul%20Praktikum%20PBWL%202020.pdf)
-[Konsep OOP](https://glints.com/id/lowongan/oop-adalah/#.YMjzgGgza01)
-[Konsep OOP - Inheritage](https://www.dicoding.com/blog/apa-itu-oop-pada-java-beserta-contohnya/)
 
