@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="{{asset('css/stylesheet.css')}}">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
     </head>
     <body style="background-color:#F5F5FB;">
         <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
@@ -35,7 +38,7 @@
         <div class="admin-container">
             <h1 class="dashboard" style="color:#0C0D36; font: size 24px; margin-top: 34px;">{{$product[0]->productname}}</h1>
             <p class="dashboard" style="color:#9191A9; font: size 16px; margin-top: 6px;">Product Details</p>
-            <form method="post" action="/addproduct" enctype="multipart/form-data">
+            <form method="post" action="/editproduct/{{$product[0]->id}}" enctype="multipart/form-data">
             @csrf
             <div class="card-add">
             <ul class="list-group" style="padding-left: 0px;">
@@ -66,19 +69,21 @@
                 </li>
                 <li class="list-group-item" style="margin-left:38px;  margin-right:39px; list-style-type : none;">
                     <select class="form-select" name="category"  style="width:100%; padding-top:10px; padding-bottom:10px; background-color:#F3F3F3; border: 6px solid transparent; border-radius: 8px;">
-                        <option selected style="border: 6px solid transparent; border-radius: 8px;" >Select Product Category</option>
-                        <option >Offline</option>
-                        <option >Online</option>
+                        <option selected style="border: 6px solid transparent; border-radius: 8px;" value="" >Select Product Category</option>
+                        <option {{ ($product[0]->category) == 'offline' ? 'selected' : '' }} >Offline</option>
+                        <option {{ ($product[0]->category) == 'online' ? 'selected' : '' }} >Online</option>
                     </select>
                 </li>
                 <li class="list-group-item" style="margin-top:19px; margin-left:38px;  margin-right:39px; list-style-type : none;">
                     Description
                 </li>
                 <li class="list-group-item" style="margin-left:38px;  margin-right:55px; list-style-type : none;">
-                    <textarea class="form-control @error('description') is-invalid @enderror" value="{{$product[0]->description}}" name="description" rows="10" style="width:100%; padding-top:10px; padding-bottom:10px; background-color:#F3F3F3; border: 6px solid transparent; border-radius: 8px;"></textarea>
+                    <textarea class="form-control @error('description') is-invalid @enderror" id="description" name="description" rows="10" style="width:100%; padding-top:10px; padding-bottom:10px; background-color:#F3F3F3; border: 6px solid transparent; border-radius: 8px;">{{$product[0]->description}}
+                    </textarea>
                     @error('description')
                             <div class="invalid-feedback"> {{ $message }}</div>
-                        @enderror
+                    @enderror
+                    <input type="hidden" id="demo" name="descriptions">
                 </li>
                 <li class="list-group-item" style="margin-top:19px; margin-left:38px;  margin-right:55px; list-style-type : none;">
                     Photo Product
@@ -86,18 +91,42 @@
                 <li class="list-group-item" style="margin-left:38px;  margin-right:55px; list-style-type : none;">
                     <div class="input-group mb-3" style="width: 730px;">
                         <input type="file" class="form-control @error('image') is-invalid @enderror" id="image" style="width:75%;" name="image">
-                        <label class="input-group-text" for="image" style="background-color:#BBBBBB; padding:10px 36px 10px 36px; border-radius:8px; margin-left: 28px;">Upload</label>
                         @error('image')
                             <div class="invalid-feedback"> {{ $message }}</div>
                         @enderror
                     </div>
                 </li>
+                <li class="list-group-item" style="margin-left:38px;  margin-right:55px; list-style-type : none;">
+                    <input type="hidden" name="oldImage" value="{{$product[0]->image}}">
+                    @if($product[0]->image)
+                        <img id="preview-image" src="{{asset('storage/' . $product[0]->image )}}" style="max-height: 250px;">
+                    @else
+                        <img id="preview-image" style="max-height: 250px;">
+                    @endif    
+                </li>
             </ul>
             </div>
             <div class="text-start dashboard" style="width:80%; margin-top:24px; margin-bottom:35px;">
-                <button class="btn btn-primary text-center btn-outline-light" style="width:100%; color:#FFFFFF; background-color:#29A867; padding-top:10px; padding-bottom:10px; font-size:16px; border-radius:8px;" type="submit">Create Product</button>
+                <button class="btn btn-primary text-center btn-outline-light" onclick="myFunction()" style="width:100%; color:#FFFFFF; background-color:#29A867; padding-top:10px; padding-bottom:10px; font-size:16px; border-radius:8px;" type="submit">Update Product</button>
             </div>
             </form>
         </div>
+        <script type="text/javascript">
+            $('#image').change(function(){
+                
+            let reader = new FileReader();
+            reader.onload = (e) => { 
+            $('#preview-image').attr('src', e.target.result); 
+            }
+            reader.readAsDataURL(this.files[0]); 
+        
+        });
+        
+        function myFunction(){
+            var text = document.getElementById("description").value;
+            text = text.replace(/\r?\n/g, '<br />');
+            document.getElementById("descriptions").innerHTML = text;
+        }
+        </script>
     </body>
 </html>

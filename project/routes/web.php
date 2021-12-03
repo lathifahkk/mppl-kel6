@@ -58,4 +58,5 @@ Route::group(['middleware' => ['auth:admin']], function(){
     Route::get('adminproduct/detail/{id}', 'App\Http\Controllers\ProductController@detail');
     Route::get('admintransaction', 'App\Http\Controllers\AdminController@admintransaction');
     Route::get('transaction/{id}', 'App\Http\Controllers\AdminController@transactiondetails');
+    Route::post('/editproduct/{id}', [ProductController::class, 'updateProduct']);
 });

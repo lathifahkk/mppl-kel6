@@ -9,6 +9,8 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="{{asset('css/stylesheet.css')}}">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+ 
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     </head>
     <body style="background-color:#F5F5FB;">
@@ -85,12 +87,14 @@
                 </li>
                 <li class="list-group-item" style="margin-left:38px;  margin-right:55px; list-style-type : none;">
                     <div class="input-group mb-3" style="width: 730px;">
-                        <input type="file" class="form-control @error('image') is-invalid @enderror" id="image" style="width:75%;" name="image">
-                        <label class="input-group-text" for="image" style="background-color:#BBBBBB; padding:10px 36px 10px 36px; border-radius:8px; margin-left: 28px;">Upload</label>
+                        <input type="file" class="form-control @error('image') is-invalid @enderror" id="image" style="width:75%;" name="image" onchange="previewImage()">
                         @error('image')
                             <div class="invalid-feedback"> {{ $message }}</div>
                         @enderror
                     </div>
+                </li>
+                <li class="list-group-item" style="margin-left:38px;  margin-right:55px; list-style-type : none;">
+                    <img id="preview-image" style="max-height: 250px;">
                 </li>
             </ul>
             </div>
@@ -98,6 +102,17 @@
                 <button class="btn btn-primary text-center btn-outline-light" style="width:100%; color:#FFFFFF; background-color:#29A867; padding-top:10px; padding-bottom:10px; font-size:16px; border-radius:8px;" type="submit">Create Product</button>
             </div>
             </form>
+            <script type="text/javascript">
+    $('#image').change(function(){
+           
+    let reader = new FileReader();
+    reader.onload = (e) => { 
+      $('#preview-image').attr('src', e.target.result); 
+    }
+    reader.readAsDataURL(this.files[0]); 
+  
+   });
+  </script>
         </div>
     </body>
 </html>

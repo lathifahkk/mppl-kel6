@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -54,7 +55,7 @@ class ProductController extends Controller
             'price' => 'required',
             'category' => 'required',
             'description' => 'required',
-            'image' => 'required|image',
+            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg',
         ]);
 
         if($request->file('image')){
@@ -91,6 +92,35 @@ class ProductController extends Controller
         $product = Product::where('category', 'online')->get();
 
         return view('online-product', compact("product"));
+    }
+
+    public function updateProduct(Request $request, $id){
+        $validateData = $request->validate([
+            'productname' => 'required|max:255',
+            'price' => 'required',
+            'category' => 'required',
+            'description' => 'required',
+            'image' => 'image|mimes:jpg,png,jpeg,gif,svg',
+        ]);
+
+        if($request->file('image')){
+            if($request->oldImage){
+                Storage::delete($request->oldImage);
+                $validateData['image'] = $request->file('image')->store('image-products');
+            }   
+        }else{
+            $validateData['image'] = $request->oldImage;
+        }
+
+        Product::where('id',$id)->update([
+            'productname' => $validateData['productname'],
+            'price' => $validateData['price'],
+            'category' => $validateData['category'],
+            'description' => $validateData['description'],
+            'image' => $validateData['image'],
+        ]);
+
+        return redirect('adminproduct')->with('status', 'Data Berhasil Diubah!');
     }
     /**
      * Display the specified resource.
