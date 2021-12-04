@@ -13,32 +13,32 @@
 ## Pendahuluan
 [`^ kembali ke atas ^`](#) 
 
-### 1. Latar Belakang
+### Latar Belakang
 Perkembangan bisnis secara online di Indonesia sekarang terbilang cukup pesat, salah satunya ialah belanja secara online. Belanja online merupakan cara belanja lewat device atau social media untuk digunakan dalam transaksi jual beli sehingga pembeli tidak perlu repot untuk berpergian ke luar karena bisa melakukan transaksi dimanapun dan kapanpun.
 
 Toko online atau bisa disebut e-commerce adalah sebuah perubahan kebiasaan baru dimana kita disajikan oleh internet dari segi cara penjualan yang awalnya konvensional. Dengan penjualan menggunakan toko online juga dapat memperluas market penjualan. Dengan adanya toko online ini diharapkan akan meningkatkan hasil penjualan dari sebelumnya.
 
 Oleh karena itu, kami akan membuat sebuah sistem dimana client bisa menampilkan produk yang ingin ditampilkan serta dijual untuk meningkatkan hasil penjualan yang ada pada sebelumnya. 
 
-### 2. Deskripsi singkat aplikasi
+### Deskripsi singkat aplikasi
 
  <br>Aplikasi yang kami buat berupa website yang bisa menampilkan sebuah produk dengan isi dari produknya berupa foto, deskripsi produk dan juga harga dari produknya. Produknya sendiri akan dibagi dua yaitu, produk yang bisa dijual pada website dan produk yang tidak bisa dijual. Karena website ini bisa menjual produk, oleh karena itu website akan ada sistem transaksi dengan proses customer akan memilih produk yang akan dibeli, lalu menentukan kuantitas produk yang akan dibeli, lalu customer dapat memasukkan produk ke dalam keranjang , atau langsung membeli dan memproses transaksi . User disini akan dibagi dua yaitu pengguna yang ingin membeli produk dan admin yang dapat mengelola informasi dari produk yang ingin dijual dan ditampilkan, seperti mengupload, edit.
 
-### 3. Tujuan
+### Tujuan
+Tujuan pengembangan website ini adalah untuk memperluas pasar dari client kami ke ranah daring/online sehingga penjualannya akan meningkat dibanding sebelumnya
+Terdapatnya katalog online berupa website yang dapat diakses oleh pelanggan Mbak Merr dengan mudah dan leluasa.
 
-## 2. Analysis 
+## Analysis User
 [`^ kembali ke atas ^`](#) 
-### 2.1. Penjual
+### Penjual
 Sebagai seorang pengusaha saya ingin mempeluas market penjualan saya, saya ingin dapat menjual produk saya secara online.
-### 2.2. Pelanggan 
+### Pelanggan 
 Sebagai seorang pembeli, saya ingin mengetahui produk apa saja yang dijual dan informasi tentang produk yang saya beli, saya juga ingin dapat membeli produk secara online tanpa harus mengunjungi toko.
 
 
-## 3. Dampak
-
-## 4. Spesifikasi teknis lingkungan pengembangan
+## Spesifikasi teknis lingkungan pengembangan
 [`^ kembali ke atas ^`](#) 
-### 4.1. Sofware
+### Sofware
 ![software](https://user-images.githubusercontent.com/60083962/122145336-40e74980-ce7f-11eb-9627-ec605ea0ceac.png)
 
 Berikut perangkat lunak yang digunakan dalam pengembangan:
@@ -50,14 +50,14 @@ Berikut perangkat lunak yang digunakan dalam pengembangan:
 * Chrome
 * XAMPP
 
-### 4.2. Hardware
+### Hardware
 Berikut spesifikasi laptop yang digunakan dalam pengembangan sistem:
-* Processor: 
-* RAM: 
-* OS: 
+* Processor: Intel Corei5
+* RAM: 8 Gb
+* OS: Window 10
 
-### 4.3. Tech Stack
-* Frontend : HTML, CSS, 
+### Tech Stack
+* Frontend : HTML, CSS, Bootstrap
 * Backend 
   * Programing Language : PHP
   * Framework : Laravel
@@ -65,23 +65,27 @@ Berikut spesifikasi laptop yang digunakan dalam pengembangan sistem:
   * DBMS : MYSQL
 
 
-## 7. Hasil dan Pembahasan
+## Hasil dan Pembahasan
 [`^ kembali ke atas ^`](#) 
-### 7.1. Use case diagram 
+### Use case diagram 
 Berikut adalah rancangan Use Case dari sistem yang kami kembangkan. Use Case ini terdiri dari 2 aktor yaitu Admin dan Customer
  <img src="https://user-images.githubusercontent.com/60084059/144564130-b0c9eb11-1919-4e30-b4b6-d3e24cbd7705.png">
 
-### 7.2. Activity diagram
-Berikut adalah rancangan Activity Diagram dari sistem yang kami kembangkan. Activity Diagram yang kami buat kami bagi menjadi 2 sisi, yaitu dari sisi Admin dan sisi Customer
+### Activity diagram
+
+Berikut adalah rancangan Activity Diagram memodelkan proses dari sistem yang kami kembangkan. Activity Diagram yang kami buat kami bagi menjadi 2 sisi, yaitu dari sisi Admin dan sisi Customer
 * Admin
  <img height="800" src="https://user-images.githubusercontent.com/60084059/144564089-30921375-ecd2-4c0f-b6b5-9ef4c7102e50.png">
 
 * Customer
  <img height="800" src="https://user-images.githubusercontent.com/60084059/144564094-f5999be2-7b22-496d-bbc8-3fd1ce3a6217.png">
  
-### 7.3. Entity Relationship Diagram (ERD)
+### Entity Relationship Diagram (ERD)
+yang digunakan untuk merancang untuk membuat database,
  <img height="800" src="https://user-images.githubusercontent.com/60084059/144564559-d908d8cf-62c3-42dd-bb4c-ef9b84e7c9d6.png">
 
+### Class Diagram
+ menggambarkan struktur sebuah sistem pemrograman
 
 ### 7.4. Arsitektur Sistem
 ![image](https://user-images.githubusercontent.com/60084059/122150563-28c7f800-ce88-11eb-8fad-17943e36ad49.png)
@@ -90,13 +94,13 @@ Berikut adalah rancangan Activity Diagram dari sistem yang kami kembangkan. Acti
 - Kemudian Controler akan merender Respon ke View 
 - Kemudian terpresentasikan pada user
 
-### 7.5 Fitur yang dikembangkan
+### Fitur yang dikembangkan
 
-### 7.6. Fungsi utama yang di kembangkan
-Fungsi utama yang dikembangkan dari Website Pecel Mbak Mer adalah 
+### Fungsi utama yang di kembangkan
+Fungsi utama yang dikembangkan dari Website Pecel Mbak Mer adalah menampilkan produk yang dijual oleh toko.
 
 
-### 7.7. Fungsi CRUD
+### Fungsi CRUD
 
 * Create : Admin dapat menambahkan produk yang dijual secara online dan offline
 * Read : Menampilkan produk yang ditambahkan oleh admin
@@ -110,6 +114,7 @@ Fungsi utama yang dikembangkan dari Website Pecel Mbak Mer adalah
 ### 8.1 
 * Admin
   * Landing  
+ss masukin deh
 
 
 
